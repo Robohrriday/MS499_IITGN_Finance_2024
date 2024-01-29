@@ -1,57 +1,57 @@
-## **Citigroup Inc.**<br>
-longName: Citigroup Inc.<br>
-website: https://www.citigroup.com<br>
-sector: Financial Services<br>
-industry: Banks - Diversified<br>
+## **Apple Inc.**<br>
+longName: Apple Inc.<br>
+website: https://www.apple.com<br>
+sector: Technology<br>
+industry: Consumer Electronics<br>
 
 ### **Business Summary**<br>
-Citigroup Inc., a diversified financial services holding company, provides various financial products and services to consumers, corporations, governments, and institutions in North America, Latin America, Asia, Europe, the Middle East, and Africa. It operates through three segments: Institutional Clients Group (ICG), Personal Banking and Wealth Management (PBWM), and Legacy Franchises. The ICG segment offers wholesale banking products and services, including fixed income and equity sales and trading, foreign exchange, prime brokerage, derivative, equity and fixed income research, corporate lending, investment banking and advisory, private banking, cash management, trade finance, and securities services to corporate, institutional, and public sector clients. The PBWM segment offers traditional banking services to retail and small business customers through retail banking, cash, rewards, value portfolios, and co-branded cards. It also provides various banking, credit cards, custody, trust, mortgages, home equity, small business, and personal consumer loans. The Legacy Franchises segment provides traditional retail banking and branded card products to retail and small business customers. The company was founded in 1812 and is headquartered in New York, New York.
+Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, and HomePod. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. In addition, the company offers various services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.
 ### **Employee Details**<br>
-fullTimeEmployees: 239<br>
+fullTimeEmployees: 161000<br>
 majorEmployees:<br>
-- Ms. Jane Nind Fraser: CEO & Director<br>
-- Mr. Mark A.L. Mason: Chief Financial Officer<br>
-- Mr. Anand  Selvakesari: Chief Operating Officer<br>
-- Mr. Paco  Ybarra: Senior Advisor<br>
-- Mr. Peter  Babej: Interim Head of Banking<br>
-- Mr. David R. Bailin: Chief Investment Officer & Global Head of Investments<br>
-- Mr. Johnbull E. Okpara: Chief Accounting Officer & Controller<br>
-- Mr. Michael  Whitaker: Head of Operations & Technology<br>
-- Ms. Jennifer  Landis: Head of Investor Relations<br>
-- Mr. Brent J. McIntosh: Chief Legal Officer & Corporate Secretary<br>
+- Mr. Timothy D. Cook: CEO & Director<br>
+- Mr. Luca  Maestri: CFO & Senior VP<br>
+- Mr. Jeffrey E. Williams: Chief Operating Officer<br>
+- Ms. Katherine L. Adams: Senior VP, General Counsel & Secretary<br>
+- Ms. Deirdre  O'Brien: Senior Vice President of Retail<br>
+- Mr. Chris  Kondo: Senior Director of Corporate Accounting<br>
+- Mr. James  Wilson: Chief Technology Officer<br>
+- Suhasini  Chandramouli: Director of Investor Relations<br>
+- Mr. Greg  Joswiak: Senior Vice President of Worldwide Marketing<br>
+- Mr. Adrian  Perica: Head of Corporate Development<br>
 ### **Recent Company News**<br>
-title: Biden suspends gas exports: Will this impact producers?<br>
-link: https://finance.yahoo.com/video/biden-suspends-gas-exports-impact-224219680.html<br>
-publisher: Yahoo Finance Video<br>
-<br>
-title: Goldman Sachs Exited 2023 With A Q4 Win But Like Morgan Stanley, Its Annual Figures Lacked Luster<br>
-link: https://finance.yahoo.com/news/goldman-sachs-exited-2023-q4-174448602.html<br>
+title: Apple's 'Find My' Feature Helps An iPhone Owner Recover Their Stolen Phone From Walmart's 'EcoATM': Here's How You Can Save Yours<br>
+link: https://finance.yahoo.com/news/apples-feature-helps-iphone-owner-093913073.html<br>
 publisher: Benzinga<br>
 <br>
-title: Layoffs in 2024: A List of Companies Cutting Jobs This Year<br>
-link: https://finance.yahoo.com/m/604dffb9-56b6-3a7f-aa11-739677c15b28/layoffs-in-2024%3A-a-list-of.html<br>
-publisher: The Wall Street Journal<br>
-<br>
-title: Cheaper Gas Prices Won’t Last Much Longer<br>
-link: https://finance.yahoo.com/m/d5337d3e-4cb7-3a14-b0a2-fa972b5ef972/cheaper-gas-prices-won%E2%80%99t-last.html<br>
-publisher: Barrons.com<br>
-<br>
-title: Exclusive-Russia struggles to sell Pacific oil, 14 tankers stuck - sources, data<br>
-link: https://finance.yahoo.com/news/exclusive-russia-struggles-sell-pacific-141422352.html<br>
+title: Investors see Microsoft's stock market value leaving Apple behind<br>
+link: https://finance.yahoo.com/news/investors-see-microsofts-stock-market-080338838.html<br>
 publisher: Reuters<br>
 <br>
-title: American Express CEO on earnings report card: We will perform in a slowing economy<br>
-link: https://finance.yahoo.com/news/american-express-ceo-on-earnings-report-card-we-will-perform-in-a-slowing-economy-134120063.html<br>
+title: Dow Jones Futures Fall; Microsoft Leads Huge Wave Of Tech Earnings<br>
+link: https://finance.yahoo.com/m/6d4f2560-a67a-3f79-bd51-03f8adf7b162/dow-jones-futures-fall%3B.html<br>
+publisher: Investor's Business Daily<br>
+<br>
+title: A Fed meeting, big tech earnings and the January jobs report: What to know this week<br>
+link: https://finance.yahoo.com/news/a-fed-meeting-big-tech-earnings-and-the-january-jobs-report-what-to-know-this-week-181304626.html<br>
 publisher: Yahoo Finance<br>
 <br>
-title: Ex-UBS, Citi Muni Bankers Hired by Rivals Eyeing Bond-Sales Revival<br>
-link: https://finance.yahoo.com/news/ex-ubs-citi-muni-bankers-120000696.html<br>
+title: Why Qualcomm Could Be a Top AI Stock for 2024<br>
+link: https://finance.yahoo.com/m/73584f66-798b-31b3-899c-7af79eeeefcb/why-qualcomm-could-be-a-top.html<br>
+publisher: Motley Fool<br>
+<br>
+title: Stock Market’s Fate Rests on $10 Trillion in Big Tech Earnings<br>
+link: https://finance.yahoo.com/news/stock-market-fate-rests-10-140000756.html<br>
 publisher: Bloomberg<br>
 <br>
-title: MORNING BID AMERICAS-PCE in our time as US economy impresses<br>
-link: https://finance.yahoo.com/news/morning-bid-americas-pce-time-110000371.html<br>
-publisher: Reuters<br>
+title: Forget The Magnificent Seven. Focus On These Fab Five.<br>
+link: https://finance.yahoo.com/m/ae781605-8fd9-3163-8eae-ecb47e1a69cc/forget-the-magnificent-seven..html<br>
+publisher: Investor's Business Daily<br>
+<br>
+title: Meta Welcomes Headset War With Apple<br>
+link: https://finance.yahoo.com/m/06065b59-9e32-3f86-9572-2d5bf92e7e9d/meta-welcomes-headset-war.html<br>
+publisher: The Wall Street Journal<br>
 <br>
 ### **Investor Data**<br>
-![Institutional Holders and Percentage Holding](/ReportMedia/Institutional Holders and Percentage Holding.png 'T1')<br>
-![Mutual Fund Holders and Percentage Holding](/ReportMedia/Mutual Fund Holders and Percentage Holding.png 'T2')<br>
+![Institutional Holders and Percentage Holding](./ReportMedia/Institutional_Holders_and_Percentage_Holding.png)<br>
+![Mutual_Fund_Holders_and_Percentage_Holding](./ReportMedia/Mutual_Fund_Holders_and_Percentage_Holding.png)<br>
