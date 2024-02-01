@@ -1,68 +1,68 @@
-## **Tesla, Inc.**<br>
-longName: Tesla, Inc.<br>
-website: https://www.tesla.com<br>
-sector: Consumer Cyclical<br>
-industry: Auto Manufacturers<br>
+## **The Goldman Sachs Group, Inc.**<br>
+longName: The Goldman Sachs Group, Inc.<br>
+website: https://www.goldmansachs.com<br>
+sector: Financial Services<br>
+industry: Capital Markets<br>
 
 ### **Business Summary**<br>
-Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive, and Energy Generation and Storage. The Automotive segment offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty after-sales vehicle, used vehicles, body shop and parts, supercharging, retail merchandise, and vehicle insurance services. This segment also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla Superchargers, and in-app upgrades; purchase financing and leasing services; services for electric vehicles through its company-owned service locations and Tesla mobile service technicians; and vehicle limited warranties and extended service plans. The Energy Generation and Storage segment engages in the design, manufacture, installation, sale, and leasing of solar energy generation and energy storage products, and related services to residential, commercial, and industrial customers and utilities through its website, stores, and galleries, as well as through a network of channel partners; and provision of service and repairs to its energy product customers, including under warranty, as well as various financing options to its solar customers. The company was formerly known as Tesla Motors, Inc. and changed its name to Tesla, Inc. in February 2017. Tesla, Inc. was incorporated in 2003 and is headquartered in Austin, Texas.
+The Goldman Sachs Group, Inc., a financial institution, provides a range of financial services for corporations, financial institutions, governments, and individuals worldwide. It operates through Global Banking & Markets, Asset & Wealth Management, and Platform Solutions segments. The Global Banking & Markets segment provides financial advisory services, including strategic advisory assignments related to mergers and acquisitions, divestitures, corporate defense activities, restructurings, and spin-offs; and relationship lending, and acquisition financing, as well as secured lending, through structured credit and asset-backed lending and involved in resale agreements. This segment also offers client execution activities for cash and derivative instruments; credit and interest rate products; and provision of mortgages, currencies, commodities, and equities related products, as well as underwriting services. The Asset & Wealth Management segment manages assets across various classes, including equity, fixed income, hedge funds, credit funds, private equity, real estate, currencies, and commodities; and provides customized investment advisory solutions, wealth advisory services, personalized financial planning, and private banking services, as well as invests in corporate equity, credit, real estate, and infrastructure assets. The Platform Solutions segment offers credit cards and point-of-sale financing for purchase of goods or services. This segment also provides cash management services, such as deposit-taking and payment solutions for corporate and institutional clients. The Goldman Sachs Group, Inc. was founded in 1869 and is headquartered in New York, New York.
 ### **Employee Details**<br>
-fullTimeEmployees: 140473<br>
+fullTimeEmployees: 45300<br>
 majorEmployees:<br>
-- Mr. Elon R. Musk: Technoking of Tesla, CEO & Director<br>
-- Mr. Andrew D. Baglino: Senior Vice President of Powertrain & Energy Engineering<br>
-- Mr. Vaibhav  Taneja: CFO, Corporate Controller & Chief Accounting Officer<br>
-- Mr. Martin  Viecha: Senior Director for Investor Relations<br>
-- Brian  Scelfo: Senior Director of Corporate Development<br>
-- Mr. Jeffrey Brian Straubel: Independent Director<br>
-- Mr. Franz  von Holzhausen: Chief Designer<br>
-- Mr. Xiaotong  Zhu: Senior Vice President of Automotive<br>
-- Mr. John  Walker: Vice President of Sales - North America<br>
-- Mr. Peter  Bannon: Chip Architect<br>
+- Mr. David  Solomon: Chairman & CEO<br>
+- Mr. John E. Waldron: President & COO<br>
+- Mr. Denis P. Coleman III: Chief Financial Officer<br>
+- Ms. Kathryn H. Ruemmler: Chief Legal Officer, Secretary & General Counsel<br>
+- Mr. Philip R. Berlinski: Global Treasurer<br>
+- Mr. J. D. Gardner: Director<br>
+- Ms. Sheara J. Fredman: Controller & Chief Accounting Officer<br>
+- F. X. De Mallmann: Chair of Investment Banking<br>
+- Mr. Atte  Lahtiranta: Partner & Chief Technology Officer<br>
+- Mr. Marco  Argenti: Partner & Chief Information Officer<br>
 ### **Recent Company News**<br>
-title: Elon Musk Wants to Move Tesla’s Incorporation From Delaware to Texas<br>
-link: https://finance.yahoo.com/m/808f2211-dea2-3c34-8270-e49473b64355/elon-musk-wants-to-move.html<br>
-publisher: The Wall Street Journal<br>
+title: Parexel Appoints Susan R. Salka to Board of Directors<br>
+link: https://finance.yahoo.com/news/parexel-appoints-susan-r-salka-140000158.html<br>
+publisher: GlobeNewswire<br>
 <br>
-title: The Lawyer—and Drummer—Who Felled Elon Musk’s $55.8 Billion Compensation Package<br>
-link: https://finance.yahoo.com/m/caa716e1-e3eb-382f-9221-628e2e5d638d/the-lawyer%E2%80%94and-drummer%E2%80%94who.html<br>
-publisher: The Wall Street Journal<br>
+title: Is Goldman Sachs ActiveBeta U.S. Small Cap Equity ETF (GSSC) a Strong ETF Right Now?<br>
+link: https://finance.yahoo.com/news/goldman-sachs-activebeta-u-small-112007929.html<br>
+publisher: Zacks<br>
 <br>
-title: US STOCKS-Futures climb following Wall St selloff after Fed holds rates steady<br>
-link: https://finance.yahoo.com/news/us-stocks-futures-climb-following-122358881.html<br>
+title: Goldman’s Jim Esposito to retire after nearly 3 decades: ‘Sometimes you have to pause to acknowledge the chapters you’ve written’<br>
+link: https://finance.yahoo.com/news/goldman-jim-esposito-retire-nearly-174317211.html<br>
+publisher: Fortune<br>
+<br>
+title: Baltimore Orioles sale to Carlyle's co-founder David Rubenstein for $1.725 billion nearly done: source<br>
+link: https://finance.yahoo.com/news/baltimore-orioles-sale-to-carlyles-co-founder-david-rubenstein-for-1725-billion-nearly-done-source-132924998.html<br>
+publisher: Yahoo Finance<br>
+<br>
+title: Korea's GS E&C hires Goldman Sachs for 1 bln euro sale of Spain's Inima, Expansion says<br>
+link: https://finance.yahoo.com/news/koreas-gs-e-c-hires-075052789.html<br>
 publisher: Reuters<br>
 <br>
-title: Deliveries for NIO, XPeng, and Li Auto Crater. Not Great News for Tesla. So Why Are the Stocks Rising?<br>
-link: https://finance.yahoo.com/m/fb9dc7f7-0712-3182-86ea-2e8ca97a53ca/deliveries-for-nio%2C-xpeng%2C.html<br>
-publisher: Barrons.com<br>
-<br>
-title: Tesla Full Year 2023 Earnings: EPS Beats Expectations<br>
-link: https://finance.yahoo.com/news/tesla-full-2023-earnings-eps-114607342.html<br>
+title: Insiders At Goldman Sachs Group Sold US$16m In Stock, Alluding To Potential Weakness<br>
+link: https://finance.yahoo.com/news/insiders-goldman-sachs-group-sold-110059052.html<br>
 publisher: Simply Wall St.<br>
 <br>
-title: China EV Sales For Li Auto, BYD Tumble; Tesla Offers Fresh Discounts<br>
-link: https://finance.yahoo.com/m/da6da17c-f136-3da4-8351-9eef64c7dd75/china-ev-sales-for-li-auto%2C.html<br>
-publisher: Investor's Business Daily<br>
+title: Goldman Sachs BDC (GSBD) Stock Falls Amid Market Uptick: What Investors Need to Know<br>
+link: https://finance.yahoo.com/news/goldman-sachs-bdc-gsbd-stock-230016481.html<br>
+publisher: Zacks<br>
 <br>
-title: Ford Has an All-New Explorer. It Isn’t Electric but It’s Smart.<br>
-link: https://finance.yahoo.com/m/97486bcf-a2be-3c4f-8130-306c217882f2/ford-has-an-all-new-explorer..html<br>
-publisher: Barrons.com<br>
-<br>
-title: Musk wants Tesla investors to vote on switching the carmaker's corporate registration to Texas<br>
-link: https://finance.yahoo.com/news/musk-wants-tesla-investors-vote-104927644.html<br>
-publisher: Associated Press Finance<br>
+title: Unlocking Profits: Discover The Banking Stocks Riding The Wave Of 2024 Rate Drops<br>
+link: https://finance.yahoo.com/news/unlocking-profits-discover-banking-stocks-200126460.html<br>
+publisher: Benzinga<br>
 <br>
 ### **Investor Data**<br>
 ![Institutional Holders and Percentage Holding](./ReportMedia/Institutional_Holders_and_Percentage_Holding.png)<br>
 ![Mutual_Fund_Holders_and_Percentage_Holding](./ReportMedia/Mutual_Fund_Holders_and_Percentage_Holding.png)<br>
 ### **Latest Financials**<br>
 #### General Financials<br>
-totalRevenue: 96772997120<br>
-totalDebt: 9573000192<br>
-totalCash: 29094000640<br>
-enterpriseValue: 577933410304<br>
-bookValuePerShare: 19.665<br>
-marketCap: 596479311872<br>
+totalRevenue: 45226000384<br>
+totalDebt: 642000027648<br>
+totalCash: 719999991808<br>
+enterpriseValue: 69306433536<br>
+bookValuePerShare: 19.177<br>
+marketCap: 124118228992<br>
 #### Liquidity Ratios<br>
-![Current Ratio](./ReportMedia/Current_Ratio.png)<br>
-![Quick Ratio](./ReportMedia/Quick_Ratio.png)<br>
+Historical Data Unavailable. Recent Current Ratio: 2.876<br>
+Historical Data Unavailable. Recent Quick Ratio: 2.041<br>
