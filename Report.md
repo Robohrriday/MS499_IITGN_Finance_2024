@@ -1,68 +1,65 @@
-## **The Goldman Sachs Group, Inc.**<br>
-longName: The Goldman Sachs Group, Inc.<br>
-website: https://www.goldmansachs.com<br>
-sector: Financial Services<br>
-industry: Capital Markets<br>
+## **Hess Corporation**<br>
+longName: Hess Corporation<br>
+website: https://www.hess.com<br>
+sector: Energy<br>
+industry: Oil & Gas E&P<br>
 
 ### **Business Summary**<br>
-The Goldman Sachs Group, Inc., a financial institution, provides a range of financial services for corporations, financial institutions, governments, and individuals worldwide. It operates through Global Banking & Markets, Asset & Wealth Management, and Platform Solutions segments. The Global Banking & Markets segment provides financial advisory services, including strategic advisory assignments related to mergers and acquisitions, divestitures, corporate defense activities, restructurings, and spin-offs; and relationship lending, and acquisition financing, as well as secured lending, through structured credit and asset-backed lending and involved in resale agreements. This segment also offers client execution activities for cash and derivative instruments; credit and interest rate products; and provision of mortgages, currencies, commodities, and equities related products, as well as underwriting services. The Asset & Wealth Management segment manages assets across various classes, including equity, fixed income, hedge funds, credit funds, private equity, real estate, currencies, and commodities; and provides customized investment advisory solutions, wealth advisory services, personalized financial planning, and private banking services, as well as invests in corporate equity, credit, real estate, and infrastructure assets. The Platform Solutions segment offers credit cards and point-of-sale financing for purchase of goods or services. This segment also provides cash management services, such as deposit-taking and payment solutions for corporate and institutional clients. The Goldman Sachs Group, Inc. was founded in 1869 and is headquartered in New York, New York.
-### **Employee Details**<br>
-fullTimeEmployees: 45300<br>
-majorEmployees:<br>
-- Mr. David  Solomon: Chairman & CEO<br>
-- Mr. John E. Waldron: President & COO<br>
-- Mr. Denis P. Coleman III: Chief Financial Officer<br>
-- Ms. Kathryn H. Ruemmler: Chief Legal Officer, Secretary & General Counsel<br>
-- Mr. Philip R. Berlinski: Global Treasurer<br>
-- Mr. J. D. Gardner: Director<br>
-- Ms. Sheara J. Fredman: Controller & Chief Accounting Officer<br>
-- F. X. De Mallmann: Chair of Investment Banking<br>
-- Mr. Atte  Lahtiranta: Partner & Chief Technology Officer<br>
-- Mr. Marco  Argenti: Partner & Chief Information Officer<br>
+Hess Corporation, an exploration and production company, explores, develops, produces, purchases, transports, and sells crude oil, natural gas liquids (NGLs), and natural gas. The company operates in two segments, Exploration and Production, and Midstream. It conducts production operations primarily in the United States, Guyana, the Malaysia/Thailand Joint Development Area, and Malaysia; and exploration activities principally offshore Guyana, the U.S. Gulf of Mexico, and offshore Suriname and Canada. The company is also involved in gathering, compressing, and processing natural gas; fractionating NGLs; gathering, terminaling, loading, and transporting crude oil and NGL through rail car; and storing and terminaling propane, as well as providing water handling services primarily in the Bakken Shale plays in the Williston Basin area of North Dakota. The company was incorporated in 1920 and is headquartered in New York, New York.majorEmployees:<br>
+- Mr. John B. Hess: CEO & Director<br>
+- Mr. John P. Rielly: Executive VP & CFO<br>
+- Mr. Gregory P. Hill: COO and President of Exploration & Production<br>
+- Mr. Timothy B. Goodell: Executive VP, General Counsel, Corporate Secretary & Chief Compliance Officer<br>
+- Ms. Barbara J. Lowery-Yilmaz: Senior VP & Chief Exploration Officer<br>
+- Mr. Richard  Lynch: Senior Vice President of Technology & Services<br>
+- Mr. Jay R. Wilson: Vice President of Investor Relations<br>
+- Lorrie  Hecker: Vice President of Communications<br>
+- Mr. Andrew P. Slentz: Senior Vice President of Human Resources & Office Management<br>
+- Jonathan C. Stein: Senior VP, CFO of Midstream & Chief Risk Officer<br>
 ### **Recent Company News**<br>
-title: Parexel Appoints Susan R. Salka to Board of Directors<br>
-link: https://finance.yahoo.com/news/parexel-appoints-susan-r-salka-140000158.html<br>
-publisher: GlobeNewswire<br>
+title: Top 12 Oil and Gas Stocks To Invest In According To Hedge Funds<br>
+link: https://finance.yahoo.com/news/top-12-oil-gas-stocks-093928090.html<br>
+publisher: Insider Monkey<br>
 <br>
-title: Is Goldman Sachs ActiveBeta U.S. Small Cap Equity ETF (GSSC) a Strong ETF Right Now?<br>
-link: https://finance.yahoo.com/news/goldman-sachs-activebeta-u-small-112007929.html<br>
+title: TotalEnergies (TTE) Q4 Earnings and Revenues Miss Estimates<br>
+link: https://finance.yahoo.com/news/totalenergies-tte-q4-earnings-revenues-183300065.html<br>
 publisher: Zacks<br>
 <br>
-title: Goldman’s Jim Esposito to retire after nearly 3 decades: ‘Sometimes you have to pause to acknowledge the chapters you’ve written’<br>
-link: https://finance.yahoo.com/news/goldman-jim-esposito-retire-nearly-174317211.html<br>
-publisher: Fortune<br>
+title: Hess Achieves CDP Climate Change Leadership Status<br>
+link: https://finance.yahoo.com/news/hess-achieves-cdp-climate-change-145700720.html<br>
+publisher: Business Wire<br>
 <br>
-title: Baltimore Orioles sale to Carlyle's co-founder David Rubenstein for $1.725 billion nearly done: source<br>
-link: https://finance.yahoo.com/news/baltimore-orioles-sale-to-carlyles-co-founder-david-rubenstein-for-1725-billion-nearly-done-source-132924998.html<br>
+title: Why oil majors are reluctant to move away from fossil fuels<br>
+link: https://finance.yahoo.com/video/why-oil-majors-reluctant-move-172616919.html<br>
+publisher: Yahoo Finance Video<br>
+<br>
+title: Energy companies' Q4 earnings expected to decline the most among sectors<br>
+link: https://finance.yahoo.com/news/energy-companies-q4-earnings-expected-to-decline-the-most-among-sectors-163512874.html<br>
 publisher: Yahoo Finance<br>
 <br>
-title: Korea's GS E&C hires Goldman Sachs for 1 bln euro sale of Spain's Inima, Expansion says<br>
-link: https://finance.yahoo.com/news/koreas-gs-e-c-hires-075052789.html<br>
-publisher: Reuters<br>
+title: Hess Corp. Boosts Bakken Output, Drilling Ahead of Chevron Merger<br>
+link: https://finance.yahoo.com/news/hess-corp-boosts-bakken-output-161609335.html<br>
+publisher: Hart Energy<br>
 <br>
-title: Insiders At Goldman Sachs Group Sold US$16m In Stock, Alluding To Potential Weakness<br>
-link: https://finance.yahoo.com/news/insiders-goldman-sachs-group-sold-110059052.html<br>
-publisher: Simply Wall St.<br>
-<br>
-title: Goldman Sachs BDC (GSBD) Stock Falls Amid Market Uptick: What Investors Need to Know<br>
-link: https://finance.yahoo.com/news/goldman-sachs-bdc-gsbd-stock-230016481.html<br>
+title: Hess (HES) Q4 Earnings Surpass Estimates, Revenues Fall Y/Y<br>
+link: https://finance.yahoo.com/news/hess-hes-q4-earnings-surpass-155000428.html<br>
 publisher: Zacks<br>
 <br>
-title: Unlocking Profits: Discover The Banking Stocks Riding The Wave Of 2024 Rate Drops<br>
-link: https://finance.yahoo.com/news/unlocking-profits-discover-banking-stocks-200126460.html<br>
-publisher: Benzinga<br>
+title: Here's What Key Metrics Tell Us About Hess (HES) Q4 Earnings<br>
+link: https://finance.yahoo.com/news/heres-key-metrics-tell-us-150003693.html<br>
+publisher: Zacks<br>
 <br>
 ### **Investor Data**<br>
 ![Institutional Holders and Percentage Holding](./ReportMedia/Institutional_Holders_and_Percentage_Holding.png)<br>
 ![Mutual_Fund_Holders_and_Percentage_Holding](./ReportMedia/Mutual_Fund_Holders_and_Percentage_Holding.png)<br>
 ### **Latest Financials**<br>
 #### General Financials<br>
-totalRevenue: 45226000384<br>
-totalDebt: 642000027648<br>
-totalCash: 719999991808<br>
-enterpriseValue: 69306433536<br>
-bookValuePerShare: 19.177<br>
-marketCap: 124118228992<br>
+totalRevenue: 10295000064<br>
+totalDebt: 9598000128<br>
+totalCash: 1688000000<br>
+enterpriseValue: 52269355008<br>
+bookValuePerShare: 29.185<br>
+marketCap: 44928077824<br>
 #### Liquidity Ratios<br>
-Historical Data Unavailable. Recent Current Ratio: 2.876<br>
-Historical Data Unavailable. Recent Quick Ratio: 2.041<br>
+![Current Ratio](./ReportMedia/Current_Ratio.png)<br>
+![Quick Ratio](./ReportMedia/Quick_Ratio.png)<br>
