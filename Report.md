@@ -67,4 +67,4 @@ marketCap: 1781685288960<br>
 ![Current Ratio](./ReportMedia/Current_Ratio.png)<br>
 ![Quick Ratio](./ReportMedia/Quick_Ratio.png)<br>
 ### Technical Information<br>
-![Stock Chart]{./ReportMedia/Stock_Chart.png}
+![Stock Chart](./ReportMedia/Stock_Chart.png)
