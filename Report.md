@@ -5,9 +5,9 @@ sector: Technology<br>
 industry: Semiconductors<br>
 
 ### **Business Summary**<br>
-NVIDIA Corporation provides graphics, and compute and networking solutions in the United States, Taiwan, China, and internationally. The company's Graphics segment offers GeForce GPUs for gaming and PCs, the GeForce NOW game streaming service and related infrastructure, and solutions for gaming platforms; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics; vGPU software for cloud-based visual and virtual computing; automotive platforms for infotainment systems; and Omniverse software for building 3D designs and virtual worlds. Its Compute & Networking segment provides Data Center platforms and systems for AI, HPC, and accelerated computing; Mellanox networking and interconnect solutions; automotive AI Cockpit, autonomous driving development agreements, and autonomous vehicle solutions; cryptocurrency mining processors; Jetson for robotics and other embedded platforms; and NVIDIA AI Enterprise and other software. The company's products are used in gaming, professional visualization, datacenter, and automotive markets. NVIDIA Corporation sells its products to original equipment manufacturers, original device manufacturers, system builders, add-in board manufacturers, retailers/distributors, independent software vendors, Internet and cloud service providers, automotive manufacturers and tier-1 automotive suppliers, mapping companies, start-ups, and other ecosystem participants. It has a strategic collaboration with Kroger Co. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California.
+NVIDIA Corporation provides graphics, and compute and networking solutions in the United States, Taiwan, China, Hong Kong, and internationally. The Graphics segment offers GeForce GPUs for gaming and PCs, the GeForce NOW game streaming service and related infrastructure, and solutions for gaming platforms; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics; virtual GPU or vGPU software for cloud-based visual and virtual computing; automotive platforms for infotainment systems; and Omniverse software for building and operating metaverse and 3D internet applications. The Compute & Networking segment comprises Data Center computing platforms and end-to-end networking platforms, including Quantum for InfiniBand and Spectrum for Ethernet; NVIDIA DRIVE automated-driving platform and automotive development agreements; Jetson robotics and other embedded platforms; NVIDIA AI Enterprise and other software; and DGX Cloud software and services. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, consumer internet companies, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California.
 ### **Employee Details**<br>
-fullTimeEmployees: 26196<br>
+fullTimeEmployees: 29600<br>
 majorEmployees:<br>
 - Mr. Jen-Hsun  Huang: Co-Founder, CEO, President & Director<br>
 - Ms. Colette M. Kress: Executive VP & CFO<br>
@@ -20,49 +20,49 @@ majorEmployees:<br>
 - Ms. Simona  Jankowski C.F.A., J.D.: Vice President of Investor Relations<br>
 - Mr. Robert  Sherbin: Vice President of Corporate Communications<br>
 ### **Recent Company News**<br>
-title: My 3 Monster AI Growth Stocks to Buy Hand Over Fist in the New Bull Market<br>
-link: https://finance.yahoo.com/m/14a12815-73e1-3b7f-9e55-85a719189c64/my-3-monster-ai-growth-stocks.html<br>
+title: Better "Magnificent Seven" Buy: Nvidia or Tesla<br>
+link: https://finance.yahoo.com/m/1bbe9d4a-48bc-3be9-a524-2ba599baf88f/better-%22magnificent-seven%22.html<br>
 publisher: Motley Fool<br>
 <br>
-title: How soon until the S&P 500 tops 6,000?<br>
-link: https://finance.yahoo.com/m/1086f97f-50f6-3e8a-8781-b99435badeaf/how-soon-until-the-s%26p-500.html<br>
-publisher: TheStreet<br>
+title: 'Fail quickly and inexpensively': Nvidia founder and CEO Jensen Huang shares his mantra for success — here's why Jim Cramer calls him a bigger visionary than Elon Musk<br>
+link: https://finance.yahoo.com/news/fail-quickly-inexpensively-nvidia-founder-130300123.html<br>
+publisher: Moneywise<br>
 <br>
-title: Billionaire David Tepper Has Invested 38% of His Portfolio in These 5 Dividend Stocks<br>
-link: https://finance.yahoo.com/m/149debcf-d92d-3152-97e3-6c9c482a8adb/billionaire-david-tepper-has.html<br>
+title: Could Nvidia Be a Threat to Super Micro Computer?<br>
+link: https://finance.yahoo.com/m/ce9c926f-1b46-3b37-86c8-ddde9699f0a1/could-nvidia-be-a-threat-to.html<br>
 publisher: Motley Fool<br>
 <br>
-title: This Top Tech Analyst Says It's 1995 Again: 3 AI Stocks to Buy If He's Right<br>
-link: https://finance.yahoo.com/m/a644166d-9b29-3bf7-ac7c-36121b9f86d5/this-top-tech-analyst-says.html<br>
+title: Dow Jones Futures: Coinbase Rockets To New High; Unity Stock Plunges 19% On Earnings<br>
+link: https://finance.yahoo.com/m/0048296b-4e30-33a4-b97c-23d370f2e3b4/dow-jones-futures%3A-coinbase.html<br>
+publisher: Investor's Business Daily<br>
+<br>
+title: History Says Nvidia's Stock Will Fall for 1 Simple Reason<br>
+link: https://finance.yahoo.com/m/bc18f63e-e36a-3f1b-ab2c-2b7d150f7ee5/history-says-nvidia%27s-stock.html<br>
 publisher: Motley Fool<br>
 <br>
-title: Artificial Intelligence (AI) Spending Could Soar 820% by 2030: 1 Surefire Index Fund to Buy Now, and 3 Index Funds to Avoid<br>
-link: https://finance.yahoo.com/m/978010a7-24da-3b03-829c-29af6e0c6703/artificial-intelligence-%28ai%29.html<br>
+title: Will Nvidia Be a $3 Trillion-Dollar Stock by 2025?<br>
+link: https://finance.yahoo.com/m/390fd110-0943-3c10-a032-d96c2fab285f/will-nvidia-be-a-%243.html<br>
 publisher: Motley Fool<br>
 <br>
-title: 3 AI Dividend Stocks to Explode in 2024<br>
-link: https://finance.yahoo.com/m/a7ae69aa-d885-3e04-9c28-b7fe43fafcef/3-ai-dividend-stocks-to.html<br>
+title: Nvidia Stock Has 12% Upside, According to 1 Wall Street Analyst<br>
+link: https://finance.yahoo.com/m/7c24ddcf-bdb3-3f0b-9f51-0f8699744a7c/nvidia-stock-has-12%25-upside%2C.html<br>
 publisher: Motley Fool<br>
 <br>
-title: Should You Buy Celsius Stock Hand Over Fist With $100 Right Now?<br>
-link: https://finance.yahoo.com/m/0f672fc7-a679-39d5-9eb0-e71e463da331/should-you-buy-celsius-stock.html<br>
-publisher: Motley Fool<br>
-<br>
-title: Missed Out on Nvidia? 2 Artificial Intelligence (AI) Stocks to Buy Before They Soar in 2024<br>
-link: https://finance.yahoo.com/m/5fb8587f-aa7c-376b-9892-37ca279797a4/missed-out-on-nvidia%3F-2.html<br>
-publisher: Motley Fool<br>
+title: Corporate AI Investment Is Surging, to Nvidia’s Benefit<br>
+link: https://finance.yahoo.com/m/0842a888-1021-3227-adc0-89f68f0b8b73/corporate-ai-investment-is.html<br>
+publisher: The Wall Street Journal<br>
 <br>
 ### **Investor Data**<br>
 ![Institutional Holders and Percentage Holding](./ReportMedia/Institutional_Holders_and_Percentage_Holding.png)<br>
 ![Mutual_Fund_Holders_and_Percentage_Holding](./ReportMedia/Mutual_Fund_Holders_and_Percentage_Holding.png)<br>
 ### **Latest Financials**<br>
 #### General Financials<br>
-totalRevenue: 44870000640<br>
-totalDebt: 11027000320<br>
-totalCash: 18281000960<br>
-enterpriseValue: 1774431109120<br>
-bookValuePerShare: 13.489<br>
-marketCap: 1781685288960<br>
+totalRevenue: 60921999360<br>
+totalDebt: 11056000000<br>
+totalCash: 25984000000<br>
+enterpriseValue: 1952597016576<br>
+bookValuePerShare: 17.442<br>
+marketCap: 1948049866752<br>
 #### Liquidity Ratios<br>
 ![Current Ratio](./ReportMedia/Current_Ratio.png)<br>
 ![Quick Ratio](./ReportMedia/Quick_Ratio.png)<br>
