@@ -20,51 +20,44 @@ majorEmployees:<br>
 - Ms. Simona  Jankowski C.F.A., J.D.: Vice President of Investor Relations<br>
 - Mr. Robert  Sherbin: Vice President of Corporate Communications<br>
 ### **Recent Company News**<br>
-title: Better "Magnificent Seven" Buy: Nvidia or Tesla<br>
-link: https://finance.yahoo.com/m/1bbe9d4a-48bc-3be9-a524-2ba599baf88f/better-%22magnificent-seven%22.html<br>
+title: Nvidia Stock Heading to $1,000?<br>
+link: https://finance.yahoo.com/m/15a16b62-8ad3-3b0b-ae0e-d40f6f7b7d79/nvidia-stock-heading-to.html<br>
 publisher: Motley Fool<br>
 <br>
-title: 'Fail quickly and inexpensively': Nvidia founder and CEO Jensen Huang shares his mantra for success — here's why Jim Cramer calls him a bigger visionary than Elon Musk<br>
-link: https://finance.yahoo.com/news/fail-quickly-inexpensively-nvidia-founder-130300123.html<br>
-publisher: Moneywise<br>
+title: Here’s How Nvidia (NVDA) is Managing AI Infrastructure<br>
+link: https://finance.yahoo.com/news/nvidia-nvda-managing-ai-infrastructure-073655693.html<br>
+publisher: Insider Monkey<br>
 <br>
-title: Could Nvidia Be a Threat to Super Micro Computer?<br>
-link: https://finance.yahoo.com/m/ce9c926f-1b46-3b37-86c8-ddde9699f0a1/could-nvidia-be-a-threat-to.html<br>
+title: From ‘Britain’s Warren Buffet’ to market sage Rob Arnott, here’s why investor naysayers are skeptical ‘first-mover’ Nvidia will continue to lead the AI boom<br>
+link: https://finance.yahoo.com/news/britain-warren-buffet-market-sage-070000512.html<br>
+publisher: Fortune<br>
+<br>
+title: SMH vs. XSD: Which Semiconductor ETF Is the Better Buy?<br>
+link: https://finance.yahoo.com/news/smh-vs-xsd-semiconductor-etf-025325977.html<br>
+publisher: TipRanks<br>
+<br>
+title: How the Zacks Rank Got it Right on NVIDIA<br>
+link: https://finance.yahoo.com/news/zacks-rank-got-nvidia-015400671.html<br>
+publisher: Zacks<br>
+<br>
+title: Super Micro Computer Fell Today -- Is This a Great Chance to Buy the Artificial Intelligence (AI) Stock?<br>
+link: https://finance.yahoo.com/m/0e6b80bd-50be-39ee-b641-7546b07ec71d/super-micro-computer-fell.html<br>
 publisher: Motley Fool<br>
 <br>
-title: Dow Jones Futures: Coinbase Rockets To New High; Unity Stock Plunges 19% On Earnings<br>
-link: https://finance.yahoo.com/m/0048296b-4e30-33a4-b97c-23d370f2e3b4/dow-jones-futures%3A-coinbase.html<br>
+title: Magnificent Seven Stocks To Buy And Watch: Google Stock Slides, Tesla Rallies<br>
+link: https://finance.yahoo.com/m/4205eaa9-f620-3a0b-a81a-0e82c7c9fd0b/magnificent-seven-stocks-to.html<br>
 publisher: Investor's Business Daily<br>
 <br>
-title: History Says Nvidia's Stock Will Fall for 1 Simple Reason<br>
-link: https://finance.yahoo.com/m/bc18f63e-e36a-3f1b-ab2c-2b7d150f7ee5/history-says-nvidia%27s-stock.html<br>
-publisher: Motley Fool<br>
-<br>
-title: Will Nvidia Be a $3 Trillion-Dollar Stock by 2025?<br>
-link: https://finance.yahoo.com/m/390fd110-0943-3c10-a032-d96c2fab285f/will-nvidia-be-a-%243.html<br>
-publisher: Motley Fool<br>
-<br>
-title: Nvidia Stock Has 12% Upside, According to 1 Wall Street Analyst<br>
-link: https://finance.yahoo.com/m/7c24ddcf-bdb3-3f0b-9f51-0f8699744a7c/nvidia-stock-has-12%25-upside%2C.html<br>
-publisher: Motley Fool<br>
-<br>
-title: Corporate AI Investment Is Surging, to Nvidia’s Benefit<br>
-link: https://finance.yahoo.com/m/0842a888-1021-3227-adc0-89f68f0b8b73/corporate-ai-investment-is.html<br>
-publisher: The Wall Street Journal<br>
+title: Jensen Huang Would Build Nvidia Again Despite What You Saw on TikTok. Here’s His Secret.<br>
+link: https://finance.yahoo.com/m/dbb53d1b-7b9e-37bc-9e2d-a01e32b18af0/jensen-huang-would-build.html<br>
+publisher: Barrons.com<br>
 <br>
 ### **Investor Data**<br>
 ![Institutional Holders and Percentage Holding](./ReportMedia/Institutional_Holders_and_Percentage_Holding.png)<br>
 ![Mutual_Fund_Holders_and_Percentage_Holding](./ReportMedia/Mutual_Fund_Holders_and_Percentage_Holding.png)<br>
 ### **Latest Financials**<br>
 #### General Financials<br>
-totalRevenue: 60921999360<br>
-totalDebt: 11056000000<br>
-totalCash: 25984000000<br>
-enterpriseValue: 1952597016576<br>
-bookValuePerShare: 17.442<br>
-marketCap: 1948049866752<br>
+![General Financials](./ReportMedia/General_Financials.png)<br>
 #### Liquidity Ratios<br>
 ![Current Ratio](./ReportMedia/Current_Ratio.png)<br>
 ![Quick Ratio](./ReportMedia/Quick_Ratio.png)<br>
-### Technical Information<br>
-![Stock Chart](./ReportMedia/Stock_Chart.png)
