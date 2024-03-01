@@ -1,56 +1,56 @@
-## **NVIDIA Corporation**<br>
-longName: NVIDIA Corporation<br>
-website: https://www.nvidia.com<br>
+## **Apple Inc.**<br>
+longName: Apple Inc.<br>
+website: https://www.apple.com<br>
 sector: Technology<br>
-industry: Semiconductors<br>
+industry: Consumer Electronics<br>
 
 ### **Business Summary**<br>
-NVIDIA Corporation provides graphics, and compute and networking solutions in the United States, Taiwan, China, Hong Kong, and internationally. The Graphics segment offers GeForce GPUs for gaming and PCs, the GeForce NOW game streaming service and related infrastructure, and solutions for gaming platforms; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics; virtual GPU or vGPU software for cloud-based visual and virtual computing; automotive platforms for infotainment systems; and Omniverse software for building and operating metaverse and 3D internet applications. The Compute & Networking segment comprises Data Center computing platforms and end-to-end networking platforms, including Quantum for InfiniBand and Spectrum for Ethernet; NVIDIA DRIVE automated-driving platform and automotive development agreements; Jetson robotics and other embedded platforms; NVIDIA AI Enterprise and other software; and DGX Cloud software and services. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, consumer internet companies, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California.
+Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, and HomePod. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. In addition, the company offers various services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.
 ### **Employee Details**<br>
-fullTimeEmployees: 29600<br>
+fullTimeEmployees: 161000<br>
 majorEmployees:<br>
-- Mr. Jen-Hsun  Huang: Co-Founder, CEO, President & Director<br>
-- Ms. Colette M. Kress: Executive VP & CFO<br>
-- Ms. Debora  Shoquist: Executive Vice President of Operations<br>
-- Mr. Timothy S. Teter: Executive VP, General Counsel & Secretary<br>
-- Mr. Ajay K. Puri: Executive Vice President of Worldwide Field Operations<br>
-- Mr. Chris A. Malachowsky: Co-Founder<br>
-- Mr. Donald F. Robertson Jr.: VP & Chief Accounting Officer<br>
-- Prof. William J. Dally: Chief Scientist & Senior VP of Research<br>
-- Ms. Simona  Jankowski C.F.A., J.D.: Vice President of Investor Relations<br>
-- Mr. Robert  Sherbin: Vice President of Corporate Communications<br>
+- Mr. Timothy D. Cook: CEO & Director<br>
+- Mr. Luca  Maestri: CFO & Senior VP<br>
+- Mr. Jeffrey E. Williams: Chief Operating Officer<br>
+- Ms. Katherine L. Adams: Senior VP, General Counsel & Secretary<br>
+- Ms. Deirdre  O'Brien: Senior Vice President of Retail<br>
+- Mr. Chris  Kondo: Senior Director of Corporate Accounting<br>
+- Mr. James  Wilson: Chief Technology Officer<br>
+- Suhasini  Chandramouli: Director of Investor Relations<br>
+- Mr. Greg  Joswiak: Senior Vice President of Worldwide Marketing<br>
+- Mr. Adrian  Perica: Head of Corporate Development<br>
 ### **Recent Company News**<br>
-title: Nvidia Stock Heading to $1,000?<br>
-link: https://finance.yahoo.com/m/15a16b62-8ad3-3b0b-ae0e-d40f6f7b7d79/nvidia-stock-heading-to.html<br>
+title: 5 Millionaire-Maker Technology Stocks<br>
+link: https://finance.yahoo.com/m/1be8c02c-f663-3640-989f-0d2608c8bcfc/5-millionaire-maker.html<br>
 publisher: Motley Fool<br>
 <br>
-title: Here’s How Nvidia (NVDA) is Managing AI Infrastructure<br>
-link: https://finance.yahoo.com/news/nvidia-nvda-managing-ai-infrastructure-073655693.html<br>
-publisher: Insider Monkey<br>
-<br>
-title: From ‘Britain’s Warren Buffet’ to market sage Rob Arnott, here’s why investor naysayers are skeptical ‘first-mover’ Nvidia will continue to lead the AI boom<br>
-link: https://finance.yahoo.com/news/britain-warren-buffet-market-sage-070000512.html<br>
-publisher: Fortune<br>
-<br>
-title: SMH vs. XSD: Which Semiconductor ETF Is the Better Buy?<br>
-link: https://finance.yahoo.com/news/smh-vs-xsd-semiconductor-etf-025325977.html<br>
-publisher: TipRanks<br>
-<br>
-title: How the Zacks Rank Got it Right on NVIDIA<br>
-link: https://finance.yahoo.com/news/zacks-rank-got-nvidia-015400671.html<br>
-publisher: Zacks<br>
-<br>
-title: Super Micro Computer Fell Today -- Is This a Great Chance to Buy the Artificial Intelligence (AI) Stock?<br>
-link: https://finance.yahoo.com/m/0e6b80bd-50be-39ee-b641-7546b07ec71d/super-micro-computer-fell.html<br>
-publisher: Motley Fool<br>
-<br>
-title: Magnificent Seven Stocks To Buy And Watch: Google Stock Slides, Tesla Rallies<br>
-link: https://finance.yahoo.com/m/4205eaa9-f620-3a0b-a81a-0e82c7c9fd0b/magnificent-seven-stocks-to.html<br>
-publisher: Investor's Business Daily<br>
-<br>
-title: Jensen Huang Would Build Nvidia Again Despite What You Saw on TikTok. Here’s His Secret.<br>
-link: https://finance.yahoo.com/m/dbb53d1b-7b9e-37bc-9e2d-a01e32b18af0/jensen-huang-would-build.html<br>
+title: Apple Shareholders Reject AI Reporting Proposal and Other Tech News Today<br>
+link: https://finance.yahoo.com/m/34ee3440-ac30-365a-800e-423115b5f822/apple-shareholders-reject-ai.html<br>
 publisher: Barrons.com<br>
+<br>
+title: Chinese retailers further discount iPhone 15<br>
+link: https://finance.yahoo.com/news/chinese-retailers-further-discount-iphone-123058190.html<br>
+publisher: Reuters<br>
+<br>
+title: Germany wants Big Tech to pay towards compliance costs of new digital law<br>
+link: https://finance.yahoo.com/news/germany-wants-big-tech-pay-121923419.html<br>
+publisher: Reuters<br>
+<br>
+title: Apple Supplier AMS-Osram Plunges 45% After Key Project Axed<br>
+link: https://finance.yahoo.com/news/apple-supplier-ams-osram-plunges-114247776.html<br>
+publisher: Bloomberg<br>
+<br>
+title: India Okays $15 Billion of Milestone Chip Plant Investments<br>
+link: https://finance.yahoo.com/news/india-approves-15-billion-milestone-101135006.html<br>
+publisher: Bloomberg<br>
+<br>
+title: Apple Investors Grow Impatient on Artificial Intelligence<br>
+link: https://finance.yahoo.com/m/6ea68a34-b8e4-37eb-bea4-ef49abe55b9d/apple-investors-grow.html<br>
+publisher: The Wall Street Journal<br>
+<br>
+title: Tech Layoffs Keep Coming. Why Is Head Count Barely Budging?<br>
+link: https://finance.yahoo.com/m/dd3ff4e5-e915-3965-9c5c-c0037cc35302/tech-layoffs-keep-coming.-why.html<br>
+publisher: The Wall Street Journal<br>
 <br>
 ### **Investor Data**<br>
 ![Institutional Holders and Percentage Holding](./ReportMedia/Institutional_Holders_and_Percentage_Holding.png)<br>
