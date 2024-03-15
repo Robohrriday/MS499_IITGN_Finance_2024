@@ -390,27 +390,6 @@ def getSymbolReport(symbol:str) -> str:
             elif field == 'enterpriseValue':
                 s += plot_general_financials(df1, df4, df5)
         return s
-
-    # def plotStockData(ticker:str):
-
-    #     data = yf.download(ticker,interval='1d')
-    #     data = data.reset_index()
-    #     start = data['Date'][0]
-    #     step = 120
-    #     dates = [str(d)[:10] for d in data['Date'][::step]]
-    #     bench = yf.download('^GSPC', interval = '1d', start = start)
-    #     bench = bench.reset_index()
-    #     combined = pd.DataFrame({f'{ticker}':data['Adj Close'], 'S&P500': bench['Adj Close']})
-    #     fig = plt.figure(figsize=(15,8))
-    #     plt.title(f'{symbol} Stock Performance, Period = Max, Interval = 1d')
-    #     plt.plot(combined[symbol], 'g')
-    #     # plt.plot(combined['S&P500'], 'b')
-    #     plt.xticks(np.arange(len(combined), step = step) ,labels = dates, rotation = 90)
-    #     plt.legend([f'{ticker}'])
-    #     plt.savefig('./ReportMedia/Stock_Chart.png')
-        
-    #     s = '### Technical Information     \n![Stock Chart](./ReportMedia/Stock_Chart.png)'
-        return s
         
     return getCompanyInfo(info_dict = info_dict) + getCompanyNews(news_list = news_list) + getInvestorData(df1 = institutional_holders, df2 = mutualfund_holders) + getFinancials(df1 = info_dict, df2 = ann_income_stmt, df3 = qua_income_stmt, df4 = ann_balance_sheet, df5 = qua_balance_sheet) # + plotStockData(symbol)
 
@@ -503,7 +482,7 @@ def getTechnicalAnalysis(symbol:str):
     return fig
 
 ### WEB SCRAPING ###
-'''redits: Nicholas Abell
+'''Credits: Nicholas Abell
 Reference: https://medium.com/@nqabell89/scraping-the-s-p-500-from-wikipedia-with-pandas-beautiful-soup-ba22101cb5ed'''
 
 def webScraping(symbol:str) -> None:
