@@ -1,56 +1,56 @@
-## **Apple Inc.**<br>
-longName: Apple Inc.<br>
-website: https://www.apple.com<br>
+## **NVIDIA Corporation**<br>
+longName: NVIDIA Corporation<br>
+website: https://www.nvidia.com<br>
 sector: Technology<br>
-industry: Consumer Electronics<br>
+industry: Semiconductors<br>
 
 ### **Business Summary**<br>
-Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, and HomePod. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. In addition, the company offers various services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.
+NVIDIA Corporation provides graphics, and compute and networking solutions in the United States, Taiwan, China, Hong Kong, and internationally. The Graphics segment offers GeForce GPUs for gaming and PCs, the GeForce NOW game streaming service and related infrastructure, and solutions for gaming platforms; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics; virtual GPU or vGPU software for cloud-based visual and virtual computing; automotive platforms for infotainment systems; and Omniverse software for building and operating metaverse and 3D internet applications. The Compute & Networking segment comprises Data Center computing platforms and end-to-end networking platforms, including Quantum for InfiniBand and Spectrum for Ethernet; NVIDIA DRIVE automated-driving platform and automotive development agreements; Jetson robotics and other embedded platforms; NVIDIA AI Enterprise and other software; and DGX Cloud software and services. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, consumer internet companies, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California.
 ### **Employee Details**<br>
-fullTimeEmployees: 161000<br>
+fullTimeEmployees: 29600<br>
 majorEmployees:<br>
-- Mr. Timothy D. Cook: CEO & Director<br>
-- Mr. Luca  Maestri: CFO & Senior VP<br>
-- Mr. Jeffrey E. Williams: Chief Operating Officer<br>
-- Ms. Katherine L. Adams: Senior VP, General Counsel & Secretary<br>
-- Ms. Deirdre  O'Brien: Senior Vice President of Retail<br>
-- Mr. Chris  Kondo: Senior Director of Corporate Accounting<br>
-- Mr. James  Wilson: Chief Technology Officer<br>
-- Suhasini  Chandramouli: Director of Investor Relations<br>
-- Mr. Greg  Joswiak: Senior Vice President of Worldwide Marketing<br>
-- Mr. Adrian  Perica: Head of Corporate Development<br>
+- Mr. Jen-Hsun  Huang: Co-Founder, CEO, President & Director<br>
+- Ms. Colette M. Kress: Executive VP & CFO<br>
+- Ms. Debora  Shoquist: Executive Vice President of Operations<br>
+- Mr. Timothy S. Teter: Executive VP, General Counsel & Secretary<br>
+- Mr. Ajay K. Puri: Executive Vice President of Worldwide Field Operations<br>
+- Mr. Chris A. Malachowsky: Co-Founder<br>
+- Mr. Donald F. Robertson Jr.: VP & Chief Accounting Officer<br>
+- Prof. William J. Dally: Chief Scientist & Senior VP of Research<br>
+- Ms. Simona  Jankowski C.F.A., J.D.: Vice President of Investor Relations<br>
+- Mr. Robert  Sherbin: Vice President of Corporate Communications<br>
 ### **Recent Company News**<br>
-title: Fireworks and Confetti: Apple’s Video Reactions Wreak Havoc at Meetings, Therapy<br>
-link: https://finance.yahoo.com/m/ad0c2fed-b806-3b93-a2d7-4d250632306e/fireworks-and-confetti%3A.html<br>
-publisher: The Wall Street Journal<br>
+title: Stocks Rise Ahead Of Fed's Guidance On Rate Cuts; Nvidia, Super Micro Fall<br>
+link: https://finance.yahoo.com/m/a7176f35-fd32-3c29-a19a-43e1fa4dfdbb/stocks-rise-ahead-of-fed%27s.html<br>
+publisher: Investor's Business Daily<br>
 <br>
-title: 12 Best Guru Stocks To Buy Now<br>
-link: https://finance.yahoo.com/news/12-best-guru-stocks-buy-112829815.html<br>
-publisher: Insider Monkey<br>
+title: This New Artificial Intelligence (AI) Chip Is a Massive Game Changer for Nvidia Stock<br>
+link: https://finance.yahoo.com/m/9a60a3ae-6307-3ee9-9e68-33027d8a4b9d/this-new-artificial.html<br>
+publisher: Motley Fool<br>
 <br>
-title: Apple Vision Pro headset becomes tool in operating room<br>
-link: https://finance.yahoo.com/news/apple-vision-pro-headset-becomes-110051091.html<br>
-publisher: Fox Business<br>
+title: Only One Other Mag 7 Stock Joins Nvidia On This Breakout Screen<br>
+link: https://finance.yahoo.com/m/fce0a54f-aa85-31dd-b8a8-056176defb5a/only-one-other-mag-7-stock.html<br>
+publisher: Investor's Business Daily<br>
 <br>
-title: Tesla and Apple Are Dropping Out of the Mag 7, Where the Opportunities Are. And 5 Other Things to Know Before Markets Open.<br>
-link: https://finance.yahoo.com/m/fc502cd8-5463-3f31-a5ea-bb2fc37aead7/tesla-and-apple-are-dropping.html<br>
-publisher: Barrons.com<br>
-<br>
-title: IPhone Maker Hon Hai’s Profit Soars 33% as AI Buoys Sales<br>
-link: https://finance.yahoo.com/news/iphone-maker-hon-hai-profit-062358359.html<br>
-publisher: Bloomberg<br>
-<br>
-title: UPDATE 3-Apple supplier Foxconn turns upbeat on 2024, cites huge demand for AI servers<br>
-link: https://finance.yahoo.com/news/1-apple-supplier-foxconns-q4-064727487.html<br>
-publisher: Reuters<br>
-<br>
-title: 'Noise isn't going away' on TikTok bill: US policy expert<br>
-link: https://finance.yahoo.com/video/noise-isnt-going-away-tiktok-211041721.html<br>
+title: Samsung stock up on potential Nvidia supplier reports<br>
+link: https://finance.yahoo.com/video/samsung-stock-potential-nvidia-supplier-141233115.html<br>
 publisher: Yahoo Finance Video<br>
 <br>
-title: It’s not all doom and gloom for Apple in 2024<br>
-link: https://finance.yahoo.com/news/its-not-all-doom-and-gloom-for-apple-in-2024-202332782.html<br>
-publisher: Yahoo Finance<br>
+title: Nvidia GTC AI conference: Everything investors need to know<br>
+link: https://finance.yahoo.com/video/nvidia-gtc-ai-conference-everything-135417477.html<br>
+publisher: Yahoo Finance Video<br>
+<br>
+title: Magnificent Seven Stocks To Buy And Watch: Nvidia Stock Slides<br>
+link: https://finance.yahoo.com/m/4205eaa9-f620-3a0b-a81a-0e82c7c9fd0b/magnificent-seven-stocks-to.html<br>
+publisher: Investor's Business Daily<br>
+<br>
+title: IBM Eyes First Record Since 2013 as AI Optimism Fuels 19% Rally<br>
+link: https://finance.yahoo.com/news/ibm-eyes-first-record-since-114629010.html<br>
+publisher: Bloomberg<br>
+<br>
+title: These Stocks Are Moving the Most Today: Chipotle, Boeing, PDD, Mobileye, Signet, BioNTech, Riot Platforms, and More<br>
+link: https://finance.yahoo.com/m/d4dea9e3-6941-397a-aae4-3d538f6fe1c5/these-stocks-are-moving-the.html<br>
+publisher: Barrons.com<br>
 <br>
 ### **Investor Data**<br>
 ![Institutional Holders and Percentage Holding](./ReportMedia/Institutional_Holders_and_Percentage_Holding.png)<br>
@@ -60,4 +60,8 @@ publisher: Yahoo Finance<br>
 ![General Financials](./ReportMedia/General_Financials.png)<br>
 #### Liquidity Ratios<br>
 ![Current Ratio](./ReportMedia/Current_Ratio.png)<br>
-![Quick Ratio](./ReportMedia/Quick_Ratio.png)<br>
+#### Solvency Ratios<br>
+![Solvency Ratios](./ReportMedia/Solvency_Ratios.png)<br>
+#### Profitability Ratios<br>
+![Profitability Ratios](./ReportMedia/Solvency_Ratios.png)<br>
+#### Earnings![Earnings](./ReportMedia/Earnings.png)<br>
