@@ -378,7 +378,7 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['left'].set_visible(False)
 
         plt.savefig('./ReportMedia/General_Financials.png')
-        return f'![General Financials]({get_base64_of_image('./ReportMedia/General_Financials.png')}) \n'
+        return f"![General Financials]({get_base64_of_image('./ReportMedia/General_Financials.png')}) \n"
 
     def plot_solvency_ratios(df4:pd.DataFrame, df5:pd.DataFrame):
         fig, ax = plt.subplots(1,2, figsize = (15, 8))
@@ -419,7 +419,7 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['left'].set_visible(False)
 
         plt.savefig('./ReportMedia/Solvency_Ratios.png')
-        return f'![Solvency Ratios]({get_base64_of_image('./ReportMedia/Solvency_Ratios.png')})   \n'
+        return f"![Solvency Ratios]({get_base64_of_image('./ReportMedia/Solvency_Ratios.png')})   \n"
 
     def plot_profitability_ratios(df2:pd.DataFrame, df3:pd.DataFrame, df4:pd.DataFrame, df5:pd.DataFrame):
         fig, ax = plt.subplots(1,2, figsize = (15, 8))
@@ -460,7 +460,7 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['left'].set_visible(False)
 
         plt.savefig('./ReportMedia/Profitability_Ratios.png')
-        return f'![Profitability Ratios]({get_base64_of_image('./ReportMedia/Profitability_Ratios.png')})  \n'
+        return f"![Profitability Ratios]({get_base64_of_image('./ReportMedia/Profitability_Ratios.png')})  \n"
     
     def plot_earnings(df2:pd.DataFrame, df3:pd.DataFrame, df4:pd.DataFrame, df5:pd.DataFrame):
         fig, ax = plt.subplots(1,2, figsize = (15,8))
@@ -512,7 +512,7 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['left'].set_visible(False)
 
         plt.savefig('./ReportMedia/Earnings.png')
-        return f'![Earnings]({get_base64_of_image('./ReportMedia/Earnings.png')}) \n'
+        return f"![Earnings]({get_base64_of_image('./ReportMedia/Earnings.png')}) \n"
         
 
 
