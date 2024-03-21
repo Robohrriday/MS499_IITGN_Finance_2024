@@ -20,36 +20,36 @@ majorEmployees:<br>
 - Ms. Simona  Jankowski C.F.A., J.D.: Vice President of Investor Relations<br>
 - Mr. Robert  Sherbin: Vice President of Corporate Communications<br>
 ### **Recent Company News**<br>
-title: Stocks Rise Ahead Of Fed's Guidance On Rate Cuts; Nvidia, Super Micro Fall<br>
-link: https://finance.yahoo.com/m/a7176f35-fd32-3c29-a19a-43e1fa4dfdbb/stocks-rise-ahead-of-fed%27s.html<br>
-publisher: Investor's Business Daily<br>
+title: Isn’t Nvidia (NASDAQ:NVDA) Stock Overvalued? Not Quite<br>
+link: https://finance.yahoo.com/news/isn-t-nvidia-nasdaq-nvda-032248694.html<br>
+publisher: TipRanks<br>
 <br>
-title: This New Artificial Intelligence (AI) Chip Is a Massive Game Changer for Nvidia Stock<br>
-link: https://finance.yahoo.com/m/9a60a3ae-6307-3ee9-9e68-33027d8a4b9d/this-new-artificial.html<br>
-publisher: Motley Fool<br>
-<br>
-title: Only One Other Mag 7 Stock Joins Nvidia On This Breakout Screen<br>
-link: https://finance.yahoo.com/m/fce0a54f-aa85-31dd-b8a8-056176defb5a/only-one-other-mag-7-stock.html<br>
-publisher: Investor's Business Daily<br>
-<br>
-title: Samsung stock up on potential Nvidia supplier reports<br>
-link: https://finance.yahoo.com/video/samsung-stock-potential-nvidia-supplier-141233115.html<br>
-publisher: Yahoo Finance Video<br>
-<br>
-title: Nvidia GTC AI conference: Everything investors need to know<br>
-link: https://finance.yahoo.com/video/nvidia-gtc-ai-conference-everything-135417477.html<br>
-publisher: Yahoo Finance Video<br>
-<br>
-title: Magnificent Seven Stocks To Buy And Watch: Nvidia Stock Slides<br>
-link: https://finance.yahoo.com/m/4205eaa9-f620-3a0b-a81a-0e82c7c9fd0b/magnificent-seven-stocks-to.html<br>
-publisher: Investor's Business Daily<br>
-<br>
-title: IBM Eyes First Record Since 2013 as AI Optimism Fuels 19% Rally<br>
-link: https://finance.yahoo.com/news/ibm-eyes-first-record-since-114629010.html<br>
+title: Tech Fund Beating 99% of Peers Says AI Rally Is Just Starting<br>
+link: https://finance.yahoo.com/news/tech-fund-beating-99-peers-030839409.html<br>
 publisher: Bloomberg<br>
 <br>
-title: These Stocks Are Moving the Most Today: Chipotle, Boeing, PDD, Mobileye, Signet, BioNTech, Riot Platforms, and More<br>
-link: https://finance.yahoo.com/m/d4dea9e3-6941-397a-aae4-3d538f6fe1c5/these-stocks-are-moving-the.html<br>
+title: Analysts revamp Super Micro Computer stock target after share offering<br>
+link: https://finance.yahoo.com/m/ba23120a-0242-3875-92f5-b9378ec15189/analysts-revamp-super-micro.html<br>
+publisher: TheStreet<br>
+<br>
+title: How Micron can remain competitive with Korean peers: Analyst<br>
+link: https://finance.yahoo.com/video/micron-remain-competitive-korean-peers-213852224.html<br>
+publisher: Yahoo Finance Video<br>
+<br>
+title: Nvidia Is Using Its Old 1990s Playbook To Best Its AI Rivals<br>
+link: https://finance.yahoo.com/m/327ec9d4-0175-33a4-a94a-a8491779623d/nvidia-is-using-its-old-1990s.html<br>
+publisher: Barrons.com<br>
+<br>
+title: Nvidia Pricing New AI Chips Aggressively To Maintain Market Share<br>
+link: https://finance.yahoo.com/m/57616371-3510-3b18-9564-53e24653f364/nvidia-pricing-new-ai-chips.html<br>
+publisher: Investor's Business Daily<br>
+<br>
+title: Nvidia Is One Of 2 Mag 7 Stocks On This Breakout Screen<br>
+link: https://finance.yahoo.com/m/fce0a54f-aa85-31dd-b8a8-056176defb5a/nvidia-is-one-of-2-mag-7.html<br>
+publisher: Investor's Business Daily<br>
+<br>
+title: These Stocks Moved the Most Today: Chipotle, Boeing, PDD, Mobileye, Signet, Riot Platforms, BioNTech, and More<br>
+link: https://finance.yahoo.com/m/d4dea9e3-6941-397a-aae4-3d538f6fe1c5/these-stocks-moved-the-most.html<br>
 publisher: Barrons.com<br>
 <br>
 ### **Investor Data**<br>
