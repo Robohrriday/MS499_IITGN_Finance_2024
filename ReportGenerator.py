@@ -190,7 +190,7 @@ def getSymbolReport(symbol:str) -> str:
 
             s = f"![Current Ratio]({get_base64_of_image('./ReportMedia/Current_Ratio.png')})     \n"
         else:
-            s = f'Historical Data Unavailable. Recent Current Ratio: {df1['currentRatio']}     \n'
+            s = f"Historical Data Unavailable. Recent Current Ratio: {df1['currentRatio']}     \n"
         return s
     
     # def plot_quick_ratio(df1:dict, df4:pd.DataFrame, df5:pd.DataFrame):
