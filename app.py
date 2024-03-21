@@ -2,6 +2,14 @@ import streamlit as st
 from ReportGenerator import getSymbolReport, getTechnicalAnalysis #Importing report Generator Functions
 from PIL import Image
 import base64
+import warnings
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import yfinance as yf
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+# warnings.filterwarnings("ignore")
 
 st.set_page_config(page_title="Stock Analysis Dashboard v1", page_icon="📈", layout="wide")
 
