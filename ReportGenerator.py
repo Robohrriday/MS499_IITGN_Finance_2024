@@ -579,8 +579,6 @@ def getTechnicalAnalysis(symbol:str):
             index = -1
     actions = actions.iloc[index:, :]
 
-
-
     # Plot data
 
     recession = pd.read_csv("GDP Based Recession Indicator.csv")    # Reference = https://fred.stlouisfed.org/series/JHGDPBRINDX
@@ -664,16 +662,24 @@ def getTechnicalAnalysis(symbol:str):
     fig.add_trace(recession_trace, row = 3, col = 1)
     fig.add_trace(inflation_trace, row = 4, col = 1)
 
-
-    for i in range(len(actions)):
-        if actions.iloc[i, 2] != 0:
+    mask1 = actions.iloc[:,2] == 0
+    mask2 = actions.iloc[:,1] == 0
+    
+    for i in range(len(actions[~mask1])):
+        if i == len(actions[~mask1])-1:
             date = actions.iloc[i, 0].date()
-            fig.add_vline(x=date, line_width=1, line_color="green", line_dash="solid", row = 'all', col = 'all', name = 'Dividend Payouts', showlegend = True)
-
-    for i in range(len(actions)):
-        if actions.iloc[i, 1] != 0:
+            fig.add_vline(x=date, line_width=1, line_color="green", line_dash="solid", row = 'all', col = 'all', name = 'Stock Splits', showlegend = True)
+        else:
             date = actions.iloc[i, 0].date()
-            fig.add_vline(x=date, line_width=1, line_color="yellow", line_dash='dash', row = 'all', col = 'all', opacity=0.4, name = 'Stock Splits', showlegend = True)
+            fig.add_vline(x=date, line_width=1, line_color="green", line_dash="solid", row = 'all', col = 'all')
+
+    for i in range(len(actions[~mask2])):
+        if i == len(actions[~mask2])-1:
+            date = actions.iloc[i, 0].date()
+            fig.add_vline(x=date, line_width=1, line_color="yellow", line_dash='dash', row = 'all', col = 'all', opacity=0.4, name = 'Dividend Payouts', showlegend = True)
+        else:
+            date = actions.iloc[i, 0].date()
+            fig.add_vline(x=date, line_width=1, line_color="yellow", line_dash='dash', row = 'all', col = 'all', opacity=0.4)
 
     fig.update_layout(
         xaxis_rangeslider_visible = False,
