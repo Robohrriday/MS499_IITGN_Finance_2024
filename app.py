@@ -3,7 +3,7 @@ from ReportGenerator import getSymbolReport, getTechnicalAnalysis #Importing rep
 from PIL import Image
 import base64
 
-st.set_page_config(page_title="Stock Analysis Dashboard", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Stock Analysis Dashboard v1", page_icon="📈", layout="wide")
 
 
 def get_base64_of_image(image_filename):
