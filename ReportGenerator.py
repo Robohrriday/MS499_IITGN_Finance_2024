@@ -338,7 +338,7 @@ def getSymbolReport(symbol:str) -> str:
     def plot_general_financials(df1:dict, df2:pd.DataFrame, df3:pd.DataFrame, df4:pd.DataFrame, df5:pd.DataFrame):
         fig,ax = plt.subplots(1,2, figsize=(15,8))
         fig.patch.set_facecolor('#0E1117')
-        fig.suptitle(f"General Financials - {symbol}\nMarket Cap: \${df1['marketCap']:,} | Enterprise Value: \${df1["enterpriseValue"]:,}", color = 'white')
+        fig.suptitle(f"General Financials - {symbol}\nMarket Cap: \${df1['marketCap']:,} | Enterprise Value: \${df1['enterpriseValue']:,}", color = 'white')
         
         columns1 = [str(column)[:10] for column in df2.columns]
         columns2 = [str(column)[:10] for column in df3.columns]
