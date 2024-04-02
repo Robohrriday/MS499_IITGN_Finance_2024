@@ -109,7 +109,7 @@ def getSymbolReport(symbol:str) -> str:
             fig = plt.gcf()
             fig.patch.set_facecolor('#0E1117')
             fig.suptitle(f'Liquidity Ratio: Current Ratio - {symbol}', color = 'white')
-
+            plt.subplots_adjust(top = 0.85)
 
             ax0t = ax[0].twiny()
             coords = np.arange(len(columns1))
@@ -336,40 +336,187 @@ def getSymbolReport(symbol:str) -> str:
     #     return s
     
     def plot_general_financials(df1:dict, df2:pd.DataFrame, df3:pd.DataFrame, df4:pd.DataFrame, df5:pd.DataFrame):
-        fig,ax = plt.subplots(1,2, figsize=(15,8))
+        fig,ax = plt.subplots(2,2, figsize=(15,8), sharex = True, sharey = True)
         fig.patch.set_facecolor('#0E1117')
-        fig.suptitle(f"General Financials - {symbol}\nMarket Cap: \${df1['marketCap']:,} | Enterprise Value: \${df1['enterpriseValue']:,}", color = 'white')
+        fig.suptitle(f"General Annual Financials - {symbol}\nMarket Cap: \${df1['marketCap']:,} | Enterprise Value: \${df1['enterpriseValue']:,}", color = 'white')
+        plt.subplots_adjust(top = 0.85)
         
         columns1 = [str(column)[:10] for column in df2.columns]
         columns2 = [str(column)[:10] for column in df3.columns]
+        
+        if 'TotalRevenue' in df2.index:
+            ax[0][0].set_title('Annual Total Revenue', color = 'white')
+            ax[0][0].barh(np.arange(len(df2.columns)), df2.loc['TotalRevenue'], 0.5 , color = 'g', alpha = 0.6)
+            ax[0][0].grid(alpha = 0.5)
+            ax[0][0].set_xlabel('Total Revenue', color = 'white')
+            ax[0][0].set_ylabel('Time Instance', color = 'white')
+            ax[0][0].set_yticks(np.arange(len(df2.columns)))
+            ax[0][0].set_yticklabels(columns1)
+            ax[0][0].tick_params(axis='both', colors='white')
+            ax[0][0].set_facecolor('#0e1117')
+        else:
+            ax[0][0].set_title('Annual Total Revenue', color = 'white')
+            ax[0][0].set_facecolor('#0e1117')
+            ax[0][0].tick_params(axis='both', colors='#0e1117')
+            ax[0][0].text(0.2,2, size = 15,s = "Total Revenue Data Unavailable", color = 'white')
 
-        ax[0].set_title(f'Annual Total Revenue, Income, Expenses and Debt', color = 'white')
-        ax[0].barh(np.arange(len(df2.columns))+0.3, df2.loc['TotalRevenue'], 0.2 , color = 'g', alpha = 0.6)
-        ax[0].barh(np.arange(len(df2.columns))+0.1, df2.loc['NetIncome'], 0.2 , color = 'violet', alpha = 0.6)
-        ax[0].barh(np.arange(len(df2.columns))-0.1, df2.loc['TotalExpenses'], 0.2 , color = 'r', alpha = 0.6)
-        ax[0].barh(np.arange(len(df2.columns))-0.3, df4.loc['TotalDebt'], 0.2 , color = 'orange', alpha = 0.6)
-        ax[0].grid(alpha = 0.5)
-        ax[0].set_xlabel('Amount', color = 'white')
-        ax[0].set_ylabel('Time Instance', color = 'white')
-        ax[0].set_yticks(np.arange(len(df2.columns)))
-        ax[0].set_yticklabels(columns1)
-        ax[0].legend(['Total Revenue', 'Net Income', 'Total Expenses', 'Total Debt'])
-        ax[0].tick_params(axis='both', colors='white')
-        ax[0].set_facecolor('#0e1117')
+
+        if 'NetIncome' in df2.index:
+            ax[0][1].set_title('Annual Net Income', color = 'white')
+            ax[0][1].barh(np.arange(len(df2.columns)), df2.loc['NetIncome'], 0.5 , color = 'violet', alpha = 0.6)
+            ax[0][1].grid(alpha = 0.5)
+            ax[0][1].set_xlabel('Net Income', color = 'white')
+            ax[0][1].set_ylabel('Time Instance', color = 'white')
+            ax[0][1].set_yticks(np.arange(len(df2.columns)))
+            ax[0][1].set_yticklabels(columns1)
+            ax[0][1].tick_params(axis='both', colors='white')
+            ax[0][1].set_facecolor('#0e1117')
+        else:
+            ax[0][1].set_title('Annual Net Income', color = 'white')
+            ax[0][1].set_facecolor('#0e1117')
+            ax[0][1].tick_params(axis='both', colors='#0e1117')
+            ax[0][1].text(0.2,2, size = 15,s = "Net Income Data Unavailable", color = 'white')
 
 
-        ax[1].set_title(f'Quarterly Total Revenue, Income, Expenses and Debt', color = 'white')
-        ax[1].barh(np.arange(len(df3.columns))+0.3, df3.loc['Total Revenue'], 0.2 , color = 'g', alpha = 0.6)
-        ax[1].barh(np.arange(len(df3.columns))+0.1, df3.loc['Net Income'], 0.2 , color = 'violet', alpha = 0.6)
-        ax[1].barh(np.arange(len(df3.columns))-0.1, df3.loc['Total Expenses'], 0.2 , color = 'r', alpha = 0.6)
-        ax[1].barh(np.arange(len(df3.columns))-0.3, df5.loc['Total Debt'], 0.2 , color = 'orange', alpha = 0.6)
-        ax[1].grid(alpha = 0.5)
-        ax[1].set_xlabel('Amount', color = 'white')
-        ax[1].set_yticks(np.arange(len(df3.columns)))
-        ax[1].set_yticklabels(columns2)
-        ax[1].legend(['Total Revenue', 'Net Income', 'Total Expenses', 'Total Debt'])
-        ax[1].tick_params(axis='both', colors='white')
-        ax[1].set_facecolor('#0e1117')
+        if 'TotalExpenses' in df2.index:
+            ax[1][0].set_title('Annual Total Expenses', color = 'white')
+            ax[1][0].barh(np.arange(len(df2.columns)), df2.loc['TotalExpenses'], 0.5 , color = 'r', alpha = 0.6)
+            ax[1][0].grid(alpha = 0.5)
+            ax[1][0].set_xlabel('Total Expenses', color = 'white')
+            ax[1][0].set_ylabel('Time Instance', color = 'white')
+            ax[1][0].set_yticks(np.arange(len(df2.columns)))
+            ax[1][0].set_yticklabels(columns1)
+            ax[1][0].tick_params(axis='both', colors='white')
+            ax[1][0].set_facecolor('#0e1117')
+        else:
+            ax[1][0].set_title('Annual Total Expenses', color = 'white')
+            ax[1][0].set_facecolor('#0e1117')
+            ax[1][0].tick_params(axis='both', colors='#0e1117')
+            ax[1][0].text(0.2,2, size = 15,s = "Total Expenses Data Unavailable", color = 'white')
+
+
+
+        if 'TotalDebt' in df4.index:
+            ax[1][1].set_title('Annual Total Debt', color = 'white')
+            ax[1][1].barh(np.arange(len(df4.columns)), df4.loc['TotalDebt'], 0.5 , color = 'orange', alpha = 0.6)
+            ax[1][1].grid(alpha = 0.5)
+            ax[1][1].set_xlabel('Total Debt', color = 'white')
+            ax[1][1].set_ylabel('Time Instance', color = 'white')
+            ax[1][1].set_yticks(np.arange(len(df4.columns)))
+            ax[1][1].set_yticklabels(columns1)
+            ax[1][1].tick_params(axis='both', colors='white')
+            ax[1][1].set_facecolor('#0e1117')
+        else:
+            ax[1][1].set_title('Annual Total Debt', color = 'white')
+            ax[1][1].set_facecolor('#0e1117')
+            ax[1][1].tick_params(axis='both', colors='#0e1117')
+            ax[1][1].text(0.2,2, size = 15,s = "Total Debt Data Unavailable", color = 'white')
+
+
+        for a in list(ax.flat):
+                a.spines['top'].set_visible(False)
+                a.spines['right'].set_visible(False)
+                a.spines['bottom'].set_visible(False)
+                a.spines['left'].set_visible(False)
+        
+        plt.savefig('./ReportMedia/General_Financials_Annual.png')
+
+        # ax[0].set_title(f'Annual Total Revenue, Income, Expenses and Debt', color = 'white')
+        # ax[0].barh(np.arange(len(df2.columns))+0.3, df2.loc['TotalRevenue'], 0.2 , color = 'g', alpha = 0.6)
+        # ax[0].barh(np.arange(len(df2.columns))+0.1, df2.loc['NetIncome'], 0.2 , color = 'violet', alpha = 0.6)
+        # ax[0].barh(np.arange(len(df2.columns))-0.1, df2.loc['TotalExpenses'], 0.2 , color = 'r', alpha = 0.6)
+        # ax[0].barh(np.arange(len(df2.columns))-0.3, df4.loc['TotalDebt'], 0.2 , color = 'orange', alpha = 0.6)
+        # ax[0].grid(alpha = 0.5)
+        # ax[0].set_xlabel('Amount', color = 'white')
+        # ax[0].set_ylabel('Time Instance', color = 'white')
+        # ax[0].set_yticks(np.arange(len(df2.columns)))
+        # ax[0].set_yticklabels(columns1)
+        # ax[0].legend(['Total Revenue', 'Net Income', 'Total Expenses', 'Total Debt'])
+        # ax[0].tick_params(axis='both', colors='white')
+        # ax[0].set_facecolor('#0e1117')
+
+        fig,ax = plt.subplots(2,2, figsize=(15,8), sharex = True, sharey = True)
+        fig.patch.set_facecolor('#0E1117')
+        fig.suptitle(f"General Quarterly Financials - {symbol}\nMarket Cap: \${df1['marketCap']:,} | Enterprise Value: \${df1['enterpriseValue']:,}", color = 'white')
+        plt.subplots_adjust(top = 0.85)
+        
+        if 'Total Revenue' in df3.index:
+            ax[0][0].set_title('Quarterly Total Revenue', color = 'white')
+            ax[0][0].barh(np.arange(len(df3.columns)), df3.loc['Total Revenue'], 0.5 , color = 'g', alpha = 0.6)
+            ax[0][0].grid(alpha = 0.5)
+            ax[0][0].set_xlabel('Total Revenue', color = 'white')
+            ax[0][0].set_ylabel('Time Instance', color = 'white')
+            ax[0][0].set_yticks(np.arange(len(df3.columns)))
+            ax[0][0].set_yticklabels(columns2)
+            ax[0][0].tick_params(axis='both', colors='white')
+            ax[0][0].set_facecolor('#0e1117')
+        else:
+            ax[0][0].set_title('Quarterly Total Revenue', color = 'white')
+            ax[0][0].set_facecolor('#0e1117')
+            ax[0][0].tick_params(axis='both', colors='#0e1117')
+            ax[0][0].text(0.2,2, size = 15,s = "Total Revenue Data Unavailable", color = 'white')
+
+        if 'Net Income' in df3.index:
+            ax[0][1].set_title('Quarterly Net Income', color = 'white')
+            ax[0][1].barh(np.arange(len(df3.columns)), df3.loc['Net Income'], 0.5 , color = 'violet', alpha = 0.6)
+            ax[0][1].grid(alpha = 0.5)
+            ax[0][1].set_xlabel('Net Income', color = 'white')
+            ax[0][1].set_ylabel('Time Instance', color = 'white')
+            ax[0][1].set_yticks(np.arange(len(df3.columns)))
+            ax[0][1].set_yticklabels(columns2)
+            ax[0][1].tick_params(axis='both', colors='white')
+            ax[0][1].set_facecolor('#0e1117')
+        else:
+            ax[0][1].set_title('Quartery Net Income', color = 'white')
+            ax[0][1].set_facecolor('#0e1117')
+            ax[0][1].tick_params(axis='both', colors='#0e1117')
+            ax[0][1].text(0.2,2, size = 15,s = "Net Income Data Unavailable", color = 'white')
+
+        if 'Total Expenses' in df3.index:
+            ax[1][0].set_title('Quarterly Total Expenses', color = 'white')
+            ax[1][0].barh(np.arange(len(df3.columns)), df3.loc['Total Expenses'], 0.5 , color = 'r', alpha = 0.6)
+            ax[1][0].grid(alpha = 0.5)
+            ax[1][0].set_xlabel('Total Expenses', color = 'white')
+            ax[1][0].set_ylabel('Time Instance', color = 'white')
+            ax[1][0].set_yticks(np.arange(len(df3.columns)))
+            ax[1][0].set_yticklabels(columns2)
+            ax[1][0].tick_params(axis='both', colors='white')
+            ax[1][0].set_facecolor('#0e1117')
+        else:
+            ax[1][0].set_title('Quarterly Total Expenses', color = 'white')
+            ax[1][0].set_facecolor('#0e1117')
+            ax[1][0].tick_params(axis='both', colors='#0e1117')
+            ax[1][0].text(0.2,2, size = 15,s = "Total Expenses Data Unavailable", color = 'white')
+
+        if 'Total Debt' in df5.index:
+            ax[1][1].set_title('Quarterly Total Debt', color = 'white')
+            ax[1][1].barh(np.arange(len(df5.columns)), df5.loc['Total Debt'], 0.5 , color = 'orange', alpha = 0.6)
+            ax[1][1].grid(alpha = 0.5)
+            ax[1][1].set_xlabel('Total Debt', color = 'white')
+            ax[1][1].set_ylabel('Time Instance', color = 'white')
+            ax[1][1].set_yticks(np.arange(len(df5.columns)))
+            ax[1][1].set_yticklabels(columns2)
+            ax[1][1].tick_params(axis='both', colors='white')
+            ax[1][1].set_facecolor('#0e1117')
+        else:
+            ax[1][1].set_title('Quarterly Total Debt', color = 'white')
+            ax[1][1].set_facecolor('#0e1117')
+            ax[1][1].tick_params(axis='both', colors='#0e1117')
+            ax[1][1].text(0.2,2, size = 15,s = "Total Debt Data Unavailable", color = 'white')
+
+
+        # ax[1].set_title(f'Quarterly Total Revenue, Income, Expenses and Debt', color = 'white')
+        # ax[1].barh(np.arange(len(df3.columns))+0.3, df3.loc['Total Revenue'], 0.2 , color = 'g', alpha = 0.6)
+        # ax[1].barh(np.arange(len(df3.columns))+0.1, df3.loc['Net Income'], 0.2 , color = 'violet', alpha = 0.6)
+        # ax[1].barh(np.arange(len(df3.columns))-0.1, df3.loc['Total Expenses'], 0.2 , color = 'r', alpha = 0.6)
+        # ax[1].barh(np.arange(len(df3.columns))-0.3, df5.loc['Total Debt'], 0.2 , color = 'orange', alpha = 0.6)
+        # ax[1].grid(alpha = 0.5)
+        # ax[1].set_xlabel('Amount', color = 'white')
+        # ax[1].set_yticks(np.arange(len(df3.columns)))
+        # ax[1].set_yticklabels(columns2)
+        # ax[1].legend(['Total Revenue', 'Net Income', 'Total Expenses', 'Total Debt'])
+        # ax[1].tick_params(axis='both', colors='white')
+        # ax[1].set_facecolor('#0e1117')
 
         for a in list(ax.flat):
                 a.spines['top'].set_visible(False)
@@ -377,8 +524,8 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['bottom'].set_visible(False)
                 a.spines['left'].set_visible(False)
 
-        plt.savefig('./ReportMedia/General_Financials.png')
-        return f"![General Financials]({get_base64_of_image('./ReportMedia/General_Financials.png')}) \n"
+        plt.savefig('./ReportMedia/General_Financials_Quarterly.png')
+        return f"![General Annual Financials]({get_base64_of_image('./ReportMedia/General_Financials_Annual.png')}) \n![General Quarterly Financials]({get_base64_of_image('./ReportMedia/General_Financials_Quarterly.png')}) \n"
 
     def plot_solvency_ratios(df4:pd.DataFrame, df5:pd.DataFrame):
         fig, ax = plt.subplots(1,2, figsize = (15, 8))
@@ -468,49 +615,177 @@ def getSymbolReport(symbol:str) -> str:
         fig.suptitle(f'Earnings - {symbol}', color = 'white')
         columns1 = [str(column)[:10] for column in df2.columns[::-1]]
         columns2 = [str(column)[:10] for column in df3.columns[::-1]]
+        plt.subplots_adjust(wspace=0.3)
 
+        mask1 = df2.loc['BasicEPS'].isna()
+        mask2 = df3.loc['Basic EPS'].isna()
+        
+        if "EBITDA" in df2.index and "EBIT" in df2.index and sum(df2.loc["EBITDA"].isna()) == 0 and sum(df2.loc["EBIT"].isna()) == 0: 
+            ax0t = ax[0].twinx()
+            scaling_factor = max(np.array(df2.loc['BasicEPS'][~mask1]))/max(max(np.array(df2.loc['EBITDA'][::-1])), max(np.array(df2.loc['EBIT'][::-1])))
+            ax[0].set_title('Annual Earnings', color = 'white')
+            ax[0].bar(np.arange(len(columns1)) - 0.125, np.array(df2.loc['EBITDA'][::-1])*scaling_factor,0.4, color = 'g', alpha = 0.7)
+            ax[0].bar(np.arange(len(columns1)) + 0.125, np.array(df2.loc['EBIT'][::-1])*scaling_factor,0.4, color = 'violet', alpha = 0.7)
+            ax0t.plot(np.arange(len(columns1)), np.array(df2.loc['BasicEPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+            ax0t.set_ylabel('EPS', color = 'white')
+            ax[0].grid(alpha = 0.5)
+            ax[0].legend(['EBITDA', 'EBIT'])
+            ax[0].set_xlabel('Time Instance', color = 'white')
+            ax[0].set_ylabel(f'Earnings Downscaled by {scaling_factor:.3e}', color = 'white')
+            ax[0].set_xticks(np.arange(len(columns1)))
+            ax[0].set_xticklabels(columns1)
+            ax[0].tick_params(axis='both', colors='white')
+            ax[0].set_facecolor('#0e1117')
+            ax0t.tick_params(axis='y', colors='orange')
 
-        ax0t = ax[0].twinx()
-        scaling_factor = max(np.array(df2.loc['BasicEPS'][::-1]))/max(max(np.array(df2.loc['EBITDA'][::-1])), max(np.array(df2.loc['EBIT'][::-1])))
-        ax[0].set_title('Annual Earnings', color = 'white')
-        ax[0].bar(np.arange(len(columns1)) - 0.125, np.array(df2.loc['EBITDA'][::-1])*scaling_factor,0.4, color = 'g', alpha = 0.7)
-        ax[0].bar(np.arange(len(columns1)) + 0.125, np.array(df2.loc['EBIT'][::-1])*scaling_factor,0.4, color = 'violet', alpha = 0.7)
-        ax0t.plot(np.arange(len(columns1)), np.array(df2.loc['BasicEPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
-        ax0t.set_ylabel('EPS', color = 'white')
-        ax[0].grid(alpha = 0.5)
-        ax[0].legend(['EBITDA', 'EBIT'])
-        ax[0].set_xlabel('Time Instance', color = 'white')
-        ax[0].set_ylabel(f'Earnings Downscaled by {scaling_factor:.3e}', color = 'white')
-        ax[0].set_xticks(np.arange(len(columns1)))
-        ax[0].set_xticklabels(columns1)
-        ax[0].tick_params(axis='both', colors='white')
-        ax[0].set_facecolor('#0e1117')
-        ax0t.tick_params(axis='y', colors='orange')
+            ax0t.spines['top'].set_visible(False)
+            ax0t.spines['right'].set_visible(False)
+            ax0t.spines['bottom'].set_visible(False)
+            ax0t.spines['left'].set_visible(False)
 
+        elif "EBITDA" not in df2.index and "EBIT" in df2.index and sum(df2.loc["EBIT"].isna()) == 0:
+            ax0t = ax[0].twinx()
+            scaling_factor = max(np.array(df2.loc['BasicEPS'][~mask1]))/max(np.array(df2.loc['EBIT'][::-1]))
+            ax[0].set_title('Annual Earnings', color = 'white')
+            ax[0].bar(np.arange(len(columns1)), np.array(df2.loc['EBIT'][::-1])*scaling_factor,0.4, color = 'violet', alpha = 0.7)
+            ax0t.plot(np.arange(len(columns1)), np.array(df2.loc['BasicEPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+            ax0t.set_ylabel('EPS', color = 'white')
+            ax[0].grid(alpha = 0.5)
+            ax[0].legend(['EBIT'])
+            ax[0].set_xlabel('Time Instance', color = 'white')
+            ax[0].set_ylabel(f'Earnings Downscaled by {scaling_factor:.3e}', color = 'white')
+            ax[0].set_xticks(np.arange(len(columns1)))
+            ax[0].set_xticklabels(columns1)
+            ax[0].tick_params(axis='both', colors='white')
+            ax[0].set_facecolor('#0e1117')
+            ax0t.tick_params(axis='y', colors='orange')
 
-        ax[1].set_title('Quarterly Earnings', color = 'white')
-        ax1t = ax[1].twinx()
-        scaling_factor = max(np.array(df3.loc['Basic EPS'][::-1]))/max(max(np.array(df3.loc['EBITDA'][::-1])), max(np.array(df3.loc['EBIT'][::-1])))
-        ax[1].bar(np.arange(len(columns2)) - 0.125, np.array(df3.loc['EBITDA'][::-1])*scaling_factor,0.4, color = 'g', alpha = 0.7)
-        ax[1].bar(np.arange(len(columns2)) + 0.125, np.array(df3.loc['EBIT'][::-1])*scaling_factor,0.4, color = 'violet', alpha = 0.7)
-        ax1t.plot(np.arange(len(columns2)), np.array(df3.loc['Basic EPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
-        ax1t.set_ylabel('EPS', color = 'white')
-        ax[1].grid(alpha = 0.5)
-        ax[1].legend(['EBITDA', 'EBIT'])
-        ax[1].set_xlabel('Time Instance', color = 'white')
-        ax[1].set_ylabel(f'Earnings Downscaled by {scaling_factor:.3e}', color = 'white')
-        ax[1].set_xticks(np.arange(len(columns2)))
-        ax[1].set_xticklabels(columns2)
-        ax[1].tick_params(axis='both', colors='white')
-        ax[1].set_facecolor('#0e1117')
-        ax1t.tick_params(axis='y', colors='orange')
+            ax0t.spines['top'].set_visible(False)
+            ax0t.spines['right'].set_visible(False)
+            ax0t.spines['bottom'].set_visible(False)
+            ax0t.spines['left'].set_visible(False)
 
-        for a in list(ax.flat) + [ax0t, ax1t]:
-                a.spines['top'].set_visible(False)
-                a.spines['right'].set_visible(False)
-                a.spines['bottom'].set_visible(False)
-                a.spines['left'].set_visible(False)
+        elif "EBITDA" in df2.index and "EBIT" not in df2.index and sum(df2.loc["EBITDA"].isna()) == 0:
+            ax0t = ax[0].twinx()
+            scaling_factor = max(np.array(df2.loc['BasicEPS'][~mask1]))/max(np.array(df2.loc['EBITDA'][::-1]))
+            ax[0].set_title('Annual Earnings', color = 'white')
+            ax[0].bar(np.arange(len(columns1)), np.array(df2.loc['EBITDA'][::-1])*scaling_factor,0.4, color = 'g', alpha = 0.7)
+            ax0t.plot(np.arange(len(columns1)), np.array(df2.loc['BasicEPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+            ax0t.set_ylabel('EPS', color = 'white')
+            ax[0].grid(alpha = 0.5)
+            ax[0].legend(['EBITDA'])
+            ax[0].set_xlabel('Time Instance', color = 'white')
+            ax[0].set_ylabel(f'Earnings Downscaled by {scaling_factor:.3e}', color = 'white')
+            ax[0].set_xticks(np.arange(len(columns1)))
+            ax[0].set_xticklabels(columns1)
+            ax[0].tick_params(axis='both', colors='white')
+            ax[0].set_facecolor('#0e1117')
+            ax0t.tick_params(axis='y', colors='orange')
 
+            ax0t.spines['top'].set_visible(False)
+            ax0t.spines['right'].set_visible(False)
+            ax0t.spines['bottom'].set_visible(False)
+            ax0t.spines['left'].set_visible(False)
+
+        else:
+            ax[0].set_title('Annual Earnings', color = 'white')
+            ax[0].plot(np.arange(len(columns1)), np.array(df2.loc['BasicEPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+            ax[0].set_ylabel('EPS', color = 'white')
+            ax[0].set_xlabel('Time Instance', color = 'white')
+            ax[0].grid(alpha = 0.5)
+            ax[0].set_xticks(np.arange(len(columns1)))
+            ax[0].set_xticklabels(columns1)
+            ax[0].tick_params(axis='x', colors='white')
+            ax[0].tick_params(axis='y', colors='orange')
+            ax[0].set_facecolor('#0e1117')
+        
+
+        if "EBITDA" in df3.index and "EBIT" in df3.index and sum(df3.loc["EBITDA"].isna()) == 0 and sum(df3.loc["EBIT"].isna()) == 0: 
+            ax1t = ax[1].twinx()
+            scaling_factor = max(np.array(df3.loc['Basic EPS'][~mask2]))/max(max(np.array(df3.loc['EBITDA'][::-1])), max(np.array(df3.loc['EBIT'][::-1])))
+            ax[1].set_title('Quarterly Earnings', color = 'white')
+            ax[1].bar(np.arange(len(columns2)) - 0.125, np.array(df3.loc['EBITDA'][::-1])*scaling_factor,0.4, color = 'g', alpha = 0.7)
+            ax[1].bar(np.arange(len(columns2)) + 0.125, np.array(df3.loc['EBIT'][::-1])*scaling_factor,0.4, color = 'violet', alpha = 0.7)
+            ax1t.plot(np.arange(len(columns2)), np.array(df3.loc['Basic EPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+            ax1t.set_ylabel('EPS', color = 'white')
+            ax[1].grid(alpha = 0.5)
+            ax[1].legend(['EBITDA', 'EBIT'])
+            ax[1].set_xlabel('Time Instance', color = 'white')
+            ax[1].set_ylabel(f'Earnings Downscaled by {scaling_factor:.3e}', color = 'white')
+            ax[1].set_xticks(np.arange(len(columns2)))
+            ax[1].set_xticklabels(columns2)
+            ax[1].tick_params(axis='both', colors='white')
+            ax[1].set_facecolor('#0e1117')
+            ax1t.tick_params(axis='y', colors='orange')
+
+            ax1t.spines['top'].set_visible(False)
+            ax1t.spines['right'].set_visible(False)
+            ax1t.spines['bottom'].set_visible(False)
+            ax1t.spines['left'].set_visible(False)
+
+        elif "EBITDA" not in df3.index and "EBIT" in df3.index and sum(df3.loc["EBIT"].isna()) == 0:
+            ax1t = ax[1].twinx()
+            scaling_factor = max(np.array(df3.loc['Basic EPS'][~mask2]))/max(np.array(df3.loc['EBIT'][::-1]))
+            ax[1].set_title('Quarterly Earnings', color = 'white')
+            ax[1].bar(np.arange(len(columns2)), np.array(df3.loc['EBIT'][::-1])*scaling_factor,0.4, color = 'violet', alpha = 0.7)
+            ax1t.plot(np.arange(len(columns2)), np.array(df3.loc['Basic EPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+            ax1t.set_ylabel('EPS', color = 'white')
+            ax[1].grid(alpha = 0.5)
+            ax[1].legend(['EBIT'])
+            ax[1].set_xlabel('Time Instance', color = 'white')
+            ax[1].set_ylabel(f'Earnings Downscaled by {scaling_factor:.3e}', color = 'white')
+            ax[1].set_xticks(np.arange(len(columns2)))
+            ax[1].set_xticklabels(columns2)
+            ax[1].tick_params(axis='both', colors='white')
+            ax[1].set_facecolor('#0e1117')
+            ax1t.tick_params(axis='y', colors='orange')
+
+            ax1t.spines['top'].set_visible(False)
+            ax1t.spines['right'].set_visible(False)
+            ax1t.spines['bottom'].set_visible(False)
+            ax1t.spines['left'].set_visible(False)
+
+        elif "EBITDA" in df3.index and "EBIT" not in df3.index and sum(df3.loc["EBITDA"].isna()) == 0:
+            ax1t = ax[1].twinx()
+            scaling_factor = max(np.array(df3.loc['Basic EPS'][~mask2]))/max(np.array(df3.loc['EBITDA'][::-1]))
+            ax[1].set_title('Quarterly Earnings', color = 'white')
+            ax[1].bar(np.arange(len(columns2)), np.array(df3.loc['EBITDA'][::-1])*scaling_factor,0.4, color = 'g', alpha = 0.7)
+            ax1t.plot(np.arange(len(columns2)), np.array(df3.loc['Basic EPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+            ax1t.set_ylabel('EPS', color = 'white')
+            ax[1].grid(alpha = 0.5)
+            ax[1].legend(['EBITDA'])
+            ax[1].set_xlabel('Time Instance', color = 'white')
+            ax[1].set_ylabel(f'Earnings Downscaled by {scaling_factor:.3e}', color = 'white')
+            ax[1].set_xticks(np.arange(len(columns2)))
+            ax[1].set_xticklabels(columns2)
+            ax[1].tick_params(axis='both', colors='white')
+            ax[1].set_facecolor('#0e1117')
+            ax1t.tick_params(axis='y', colors='orange')
+
+            ax1t.spines['top'].set_visible(False)
+            ax1t.spines['right'].set_visible(False)
+            ax1t.spines['bottom'].set_visible(False)
+            ax1t.spines['left'].set_visible(False)
+
+        else:
+            ax[1].set_title('Quarterly Earnings', color = 'white')
+            ax[1].plot(np.arange(len(columns2)), np.array(df3.loc['Basic EPS'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+            ax[1].set_ylabel('EPS', color = 'white')
+            ax[1].set_xlabel('Time Instance', color = 'white')
+            ax[1].grid(alpha = 0.5)
+            ax[1].set_xticks(np.arange(len(columns2)))
+            ax[1].set_xticklabels(columns2)
+            ax[1].tick_params(axis='x', colors='white')
+            ax[1].tick_params(axis='y', colors='orange')
+            ax[1].set_facecolor('#0e1117')
+
+        for a in list(ax.flat):
+            a.spines['top'].set_visible(False)
+            a.spines['right'].set_visible(False)
+            a.spines['bottom'].set_visible(False)
+            a.spines['left'].set_visible(False)
+
+        
         plt.savefig('./ReportMedia/Earnings.png')
         return f"![Earnings]({get_base64_of_image('./ReportMedia/Earnings.png')}) \n"
         
@@ -565,19 +840,14 @@ def getTechnicalAnalysis(symbol:str):
     data = yf.download(symbol, period='10y', interval='1d')
     data = data.reset_index()
 
-    ticker = yf.Ticker(symbol)
-    actions = ticker.actions
-    actions = actions.reset_index()
-
     data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
     dd = data['Date'][0]
-    for i in range(len(actions)):
-        if actions.iloc[i,0].date() > dd.date():
-            index = i
-            break
-        else:
-            index = -1
-    actions = actions.iloc[index:, :]
+
+    ticker = yf.Ticker(symbol)
+    actions = ticker.actions
+    flag_actions = True
+    if len(actions) == 0:
+        flag_actions = False
 
     # Plot data
 
@@ -662,24 +932,37 @@ def getTechnicalAnalysis(symbol:str):
     fig.add_trace(recession_trace, row = 3, col = 1)
     fig.add_trace(inflation_trace, row = 4, col = 1)
 
-    mask1 = actions.iloc[:,2] == 0
-    mask2 = actions.iloc[:,1] == 0
-    
-    for i in range(len(actions[~mask1])):
-        if i == len(actions[~mask1])-1:
-            date = actions.iloc[i, 0].date()
-            fig.add_vline(x=date, line_width=1, line_color="green", line_dash="solid", row = 'all', col = 'all', name = 'Stock Splits', showlegend = True)
-        else:
-            date = actions.iloc[i, 0].date()
-            fig.add_vline(x=date, line_width=1, line_color="green", line_dash="solid", row = 'all', col = 'all')
+    if flag_actions is True:
+        actions = actions.reset_index()
+        actions_index_flag = True
+        for i in range(len(actions)):
+            if actions.iloc[i,0].date() > dd.date():
+                index = i
+                break
+            else:
+                actions_index_flag = False
+                
+        if actions_index_flag:
+            actions = actions.iloc[index:, :]
 
-    for i in range(len(actions[~mask2])):
-        if i == len(actions[~mask2])-1:
-            date = actions.iloc[i, 0].date()
-            fig.add_vline(x=date, line_width=1, line_color="yellow", line_dash='dash', row = 'all', col = 'all', opacity=0.4, name = 'Dividend Payouts', showlegend = True)
-        else:
-            date = actions.iloc[i, 0].date()
-            fig.add_vline(x=date, line_width=1, line_color="yellow", line_dash='dash', row = 'all', col = 'all', opacity=0.4)
+            mask1 = actions.iloc[:,2] == 0
+            mask2 = actions.iloc[:,1] == 0
+            
+            for i in range(len(actions[~mask1])):
+                if i == len(actions[~mask1])-1:
+                    date = actions.iloc[i, 0].date()
+                    fig.add_vline(x=date, line_width=1, line_color="green", line_dash="solid", row = 'all', col = 'all', name = 'Stock Splits', showlegend = True)
+                else:
+                    date = actions.iloc[i, 0].date()
+                    fig.add_vline(x=date, line_width=1, line_color="green", line_dash="solid", row = 'all', col = 'all')
+
+            for i in range(len(actions[~mask2])):
+                if i == len(actions[~mask2])-1:
+                    date = actions.iloc[i, 0].date()
+                    fig.add_vline(x=date, line_width=1, line_color="yellow", line_dash='dash', row = 'all', col = 'all', opacity=0.4, name = 'Dividend Payouts', showlegend = True)
+                else:
+                    date = actions.iloc[i, 0].date()
+                    fig.add_vline(x=date, line_width=1, line_color="yellow", line_dash='dash', row = 'all', col = 'all', opacity=0.4)
 
     fig.update_layout(
         xaxis_rangeslider_visible = False,
