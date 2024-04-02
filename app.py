@@ -33,4 +33,4 @@ if st.button("Generate Report"):
     st.markdown('### Technical Analysis')
     st.plotly_chart(fig1)
     st.markdown('### Benchmark and Competitor Analysis')
-    st.markdown(fig2)
+    st.plotly_chart(fig2)

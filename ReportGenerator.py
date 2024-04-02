@@ -879,7 +879,7 @@ def getTechnicalAnalysis(symbol:str):
             index = -1
     new_inflation = new_inflation.iloc[index:, :]
 
-    fig = make_subplots(rows=4, cols=1, shared_xaxes=True)
+    fig = make_subplots(rows=4, cols=1, shared_xaxes=True, vertical_spacing=0, subplot_titles=[f'{symbol} Stock Price','Volume Traded','GDP Based Recession Indicator (out of 100)', 'USA Breakeven Inflation Rates'])
 
     period = 200
     sim_mov_avg = data['Close'].rolling(window=period).mean()
@@ -890,7 +890,7 @@ def getTechnicalAnalysis(symbol:str):
         high=data["High"],
         low=data["Low"],
         close=data["Close"],
-        name = 'Price'
+        name = 'Price',
     ) 
 
     mov_avg_trace = go.Scatter(
@@ -968,65 +968,104 @@ def getTechnicalAnalysis(symbol:str):
         xaxis_rangeslider_visible = False,
         template = 'plotly_dark',
         title= f"{symbol} Chart",
-        xaxis_title="Date",
         yaxis_title= "Stock Price",
-        width=2000,
-        height=1500
+        width = 2000,
+        height = 2000,
+        annotations=[dict(
+                        x=0.5,
+                        y=-0.03,
+                        showarrow=False,
+                        text="Date",
+                        xref="paper",
+                        yref="paper"
+                        )
+                        ]
     )
 
     fig.update_yaxes(title_text="Volume", row=2, col=1)
-    fig.update_yaxes(title_text="GDP Based USA Recession Indicator (out of 100)", row=3, col=1)
-    fig.update_yaxes(title_text="USA Breakeven Inflation Rates", row=4, col=1)
+    fig.update_yaxes(title_text="Indicator (out of 100)", row=3, col=1)
+    fig.update_yaxes(title_text=" Inflation Rates", row=4, col=1)
 
     # fig.show()
     return fig
 
 
-def benchmarksAndCompetitorAnalysis(symbol:str):
+def benchmarksAndCompetitorAnalysis(symbol: str):
     """
     Get comparison of returns against benchmarks and competitors from similar industry for the desired symbol.
     symbol: Symbol
     """
+    # Get data and processing it
+    symbol_data = yf.download(symbol, period='10y', interval='1d')
+    symbol_data = symbol_data.reset_index()
 
-    # Get data and process it
-    data = yf.download(symbol, period='10y', interval='1d')
-    data = data.reset_index()
+    indices = {"Information Technology": "^SP500-45", "Health Care": "^SP500-35", "Financials": "^SP500-40",
+               "Consumer Discretionary": "^SP500-25", "Communication Services": "^SP500-50", "Industrials": "^SP500-20",
+               "Consumer Staples": "^SP500-30", "Energy": "^SP500-10", "Utilities": "^SP500-55", "Real Estate": "^SP500-60",
+               "Materials": "^SP500-15", "S&P 500 Index": "^GSPC"}
 
     SP_data = pd.read_excel("S&P500data.xlsx")
+    SP_data.columns = SP_data.iloc[0, :]
+    SP_data = SP_data.drop(index=0)
+
     symbol_sector = SP_data[SP_data['Symbol'] == symbol]['GICS Sector'].item()
     symbol_subsector = SP_data[SP_data['Symbol'] == symbol]['GICS Sub-Industry'].item()
 
+    sector_index = yf.download(indices[symbol_sector], period='10y', interval='1d')
+    sector_index = sector_index.reset_index()
+
+    SP_index = yf.download(indices["S&P 500 Index"], period='10y', interval='1d')
+    SP_index = SP_index.reset_index()
+
     competitor_data = SP_data[(SP_data['GICS Sector'] == symbol_sector) & (SP_data['GICS Sub-Industry'] == symbol_subsector)]
     tickers = list(competitor_data['Symbol'])
-
     stock_data = {}
     for ticker in tickers:
         data = yf.download(ticker, period='10y', interval='1d')
         data = data.reset_index()
         stock_data[ticker] = data
 
-    fig, ax = plt.subplots(figsize=(30, 10))
-    fig.set_facecolor('#0E111')
+    # Plot data
+    fig = make_subplots(rows=2, cols=1, shared_xaxes=True, vertical_spacing=0, subplot_titles=['Cumulative Returns: Stock vs Sector Index vs S&P 500','Cumulative Stock Returns: Competitor Analysis'])
 
+    # Subplot 1: Comparison with benchmark returns
+    stock_cumulative_returns = (1 + symbol_data['Adj Close'].pct_change()).cumprod()
+    sector_cumulative_returns = (1 + sector_index['Adj Close'].pct_change()).cumprod()
+    sp500_cumulative_returns = (1 + SP_index['Adj Close'].pct_change()).cumprod()
+
+    stock_trace = go.Scatter(x=symbol_data['Date'], y=stock_cumulative_returns.values, mode='lines', name=symbol)
+    sector_trace = go.Scatter(x=sector_index['Date'], y=sector_cumulative_returns.values, mode='lines', name=symbol_sector)
+    sp500_trace = go.Scatter(x=SP_index['Date'], y=sp500_cumulative_returns.values, mode='lines', name="S&P 500 Index")
+
+    fig.add_trace(stock_trace, row=1, col=1)
+    fig.add_trace(sector_trace, row=1, col=1)
+    fig.add_trace(sp500_trace, row=1, col=1)
+
+    # Subplot 2: Comparison with competitors
     for ticker in tickers:
         data = stock_data[ticker]['Adj Close']
         cumulative_returns = (1 + data.pct_change()).cumprod()
-        cumulative_returns.plot(ax=ax, label=ticker)
+        trace = go.Scatter(x=stock_data[ticker]['Date'], y=cumulative_returns.values, mode='lines', name=ticker, showlegend=True)
+        fig.add_trace(trace, row=2, col=1)
+
+    fig.update_layout(title='Benchmarked Returns and Competitor Analysis', 
+                      yaxis_title='Cumulative Returns (Past 10yrs)', 
+                      height= 1000, template='plotly_dark',
+                      yaxis2=dict(title='Cumulative Returns (Past 10yrs)'), 
+                      width = 2000,
+                      annotations=[dict(
+                                    x=0.5,
+                                    y=-0.05,
+                                    showarrow=False,
+                                    text="Date",
+                                    xref="paper",
+                                    yref="paper"
+                                    )
+                        ]
+    )
+
+    return fig
     
-
-    ax.set_title('Stock Returns', fontsize=16, color = 'white')
-    ax.set_xlabel('Days since ', fontsize=14, color = 'white')
-    ax.set_ylabel('Cumulative Returns', fontsize=14, color = 'white')
-    ax.legend(fontsize=12)
-    ax.tick_params(axis='both', colors='white')
-    ax.set_facecolor('#0e1117')
-    ax.grid(alpha = 0.5)
-
-    plt.savefig('./ReportMedia/Competitor_Analysis.png')
-    return f"![Competitor Analysis]({get_base64_of_image('./ReportMedia/Competitor_Analysis.png')}) \n"
-    
-
-
 
 # ### WEB SCRAPING ###
 # '''Credits: Nicholas Abell
