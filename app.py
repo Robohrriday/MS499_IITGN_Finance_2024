@@ -1,5 +1,5 @@
 import streamlit as st
-from ReportGenerator import getSymbolReport, getTechnicalAnalysis #Importing report Generator Functions
+from ReportGenerator import getSymbolReport, getTechnicalAnalysis, benchmarksAndCompetitorAnalysis #Importing report Generator Functions
 from PIL import Image
 import base64
 # import warnings
@@ -27,7 +27,10 @@ ticker_symbol = st.text_input("Enter US S&P 500 Ticker:")
 
 if st.button("Generate Report"):
     report = getSymbolReport(ticker_symbol)
-    fig = getTechnicalAnalysis(ticker_symbol)
+    fig1 = getTechnicalAnalysis(ticker_symbol)
+    fig2 = benchmarksAndCompetitorAnalysis(ticker_symbol)
     st.markdown(report)
     st.markdown('### Technical Analysis')
-    st.plotly_chart(fig)
+    st.plotly_chart(fig1)
+    st.markdown('### Benchmark and Competitor Analysis')
+    st.markdown(fig2)

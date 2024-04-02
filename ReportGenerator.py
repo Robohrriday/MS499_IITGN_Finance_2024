@@ -981,6 +981,53 @@ def getTechnicalAnalysis(symbol:str):
     # fig.show()
     return fig
 
+
+def benchmarksAndCompetitorAnalysis(symbol:str):
+    """
+    Get comparison of returns against benchmarks and competitors from similar industry for the desired symbol.
+    symbol: Symbol
+    """
+
+    # Get data and process it
+    data = yf.download(symbol, period='10y', interval='1d')
+    data = data.reset_index()
+
+    SP_data = pd.read_excel("S&P500data.xlsx")
+    symbol_sector = SP_data[SP_data['Symbol'] == symbol]['GICS Sector'].item()
+    symbol_subsector = SP_data[SP_data['Symbol'] == symbol]['GICS Sub-Industry'].item()
+
+    competitor_data = SP_data[(SP_data['GICS Sector'] == symbol_sector) & (SP_data['GICS Sub-Industry'] == symbol_subsector)]
+    tickers = list(competitor_data['Symbol'])
+
+    stock_data = {}
+    for ticker in tickers:
+        data = yf.download(ticker, period='10y', interval='1d')
+        data = data.reset_index()
+        stock_data[ticker] = data
+
+    fig, ax = plt.subplots(figsize=(30, 10))
+    fig.set_facecolor('#0E111')
+
+    for ticker in tickers:
+        data = stock_data[ticker]['Adj Close']
+        cumulative_returns = (1 + data.pct_change()).cumprod()
+        cumulative_returns.plot(ax=ax, label=ticker)
+    
+
+    ax.set_title('Stock Returns', fontsize=16, color = 'white')
+    ax.set_xlabel('Days since ', fontsize=14, color = 'white')
+    ax.set_ylabel('Cumulative Returns', fontsize=14, color = 'white')
+    ax.legend(fontsize=12)
+    ax.tick_params(axis='both', colors='white')
+    ax.set_facecolor('#0e1117')
+    ax.grid(alpha = 0.5)
+
+    plt.savefig('./ReportMedia/Competitor_Analysis.png')
+    return f"![Competitor Analysis]({get_base64_of_image('./ReportMedia/Competitor_Analysis.png')}) \n"
+    
+
+
+
 # ### WEB SCRAPING ###
 # '''Credits: Nicholas Abell
 # Reference: https://medium.com/@nqabell89/scraping-the-s-p-500-from-wikipedia-with-pandas-beautiful-soup-ba22101cb5ed'''
