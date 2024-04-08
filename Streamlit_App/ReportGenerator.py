@@ -851,8 +851,8 @@ def getTechnicalAnalysis(symbol:str):
 
     # Plot data
 
-    recession = pd.read_csv("GDP Based Recession Indicator.csv")    # Reference = https://fred.stlouisfed.org/series/JHGDPBRINDX
-    inflation = pd.read_csv("Inflation.csv")                        # Reference = https://fred.stlouisfed.org/series/T10YIE
+    recession = pd.read_csv("Streamlit_App/GDP Based Recession Indicator.csv")    # Reference = https://fred.stlouisfed.org/series/JHGDPBRINDX
+    inflation = pd.read_csv("Streamlit_App/Inflation.csv")                        # Reference = https://fred.stlouisfed.org/series/T10YIE
 
     new_recession_date = pd.Series(recession['DATE'], dtype = 'datetime64[ms]')
     new_inflation_date = pd.Series(inflation['DATE'], dtype = 'datetime64[ms]')
@@ -996,7 +996,7 @@ def benchmarksAndCompetitorAnalysis(symbol: str):
                "Consumer Staples": "^SP500-30", "Energy": "^SP500-10", "Utilities": "^SP500-55", "Real Estate": "^SP500-60",
                "Materials": "^SP500-15", "S&P 500 Index": "^GSPC"}
 
-    SP_data = pd.read_excel("S&P500data.xlsx")
+    SP_data = pd.read_excel("Streamlit_App/S&P500data.xlsx")
     SP_data.columns = SP_data.iloc[0, :]
     SP_data = SP_data.drop(index=0)
 
