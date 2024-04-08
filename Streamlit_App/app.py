@@ -17,7 +17,7 @@ def get_base64_of_image(image_filename):
     encoded_data = base64.b64encode(image_data).decode()
     return f"data:image/png;base64,{encoded_data}"
 
-image_path = "header.gif"  # Replace with actual path
+image_path = "Streamlit_App/header.gif"  # Replace with actual path
 base64_data = get_base64_of_image(image_path)
 
 st.markdown(f"![My Image]({base64_data})")
