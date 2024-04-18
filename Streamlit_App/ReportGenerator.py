@@ -824,7 +824,7 @@ def getSymbolReport(symbol:str) -> str:
                 s += plot_earnings(df2, df3, df4, df5)
         return s
         
-    return getCompanyInfo(info_dict = info_dict) + getCompanyNews(news_list = news_list) + getInvestorData(df1 = institutional_holders, df2 = mutualfund_holders) + getFinancials(df1 = info_dict, df2 = ann_income_stmt, df3 = qua_income_stmt, df4 = ann_balance_sheet, df5 = qua_balance_sheet)
+    return getCompanyInfo(info_dict = info_dict) + getCompanyNews(news_list = news_list) + getFinancials(df1 = info_dict, df2 = ann_income_stmt, df3 = qua_income_stmt, df4 = ann_balance_sheet, df5 = qua_balance_sheet) #getInvestorData(df1 = institutional_holders, df2 = mutualfund_holders)
 
 
 ### TECHNICAL ANALYSIS ###
