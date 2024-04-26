@@ -1000,8 +1000,8 @@ def benchmarksAndCompetitorAnalysis(symbol: str):
     SP_data.columns = SP_data.iloc[0, :]
     SP_data = SP_data.drop(index=0)
 
-    symbol_sector = SP_data[SP_data['Symbol'] == symbol.replace("_", ".")]['GICS Sector'].item()
-    symbol_subsector = SP_data[SP_data['Symbol'] == symbol.replace("_", ".")]['GICS Sub-Industry'].item()
+    symbol_sector = SP_data[SP_data['Symbol'] == symbol.replace("-", ".")]['GICS Sector'].item()
+    symbol_subsector = SP_data[SP_data['Symbol'] == symbol.replace("-", ".")]['GICS Sub-Industry'].item()
 
     sector_index = yf.download(indices[symbol_sector], period='10y', interval='1d')
     sector_index = sector_index.reset_index()
