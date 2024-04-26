@@ -824,7 +824,7 @@ def getSymbolReport(symbol:str) -> str:
                 s += plot_earnings(df2, df3, df4, df5)
         return s
         
-    return getCompanyInfo(info_dict = info_dict) + getCompanyNews(news_list = news_list) + getFinancials(df1 = info_dict, df2 = ann_income_stmt, df3 = qua_income_stmt, df4 = ann_balance_sheet, df5 = qua_balance_sheet) #getInvestorData(df1 = institutional_holders, df2 = mutualfund_holders)
+    return getCompanyInfo(info_dict = info_dict) + getCompanyNews(news_list = news_list) + getInvestorData(df1 = institutional_holders, df2 = mutualfund_holders) + getFinancials(df1 = info_dict, df2 = ann_income_stmt, df3 = qua_income_stmt, df4 = ann_balance_sheet, df5 = qua_balance_sheet) 
 
 
 ### TECHNICAL ANALYSIS ###
@@ -1000,8 +1000,8 @@ def benchmarksAndCompetitorAnalysis(symbol: str):
     SP_data.columns = SP_data.iloc[0, :]
     SP_data = SP_data.drop(index=0)
 
-    symbol_sector = SP_data[SP_data['Symbol'] == symbol]['GICS Sector'].item()
-    symbol_subsector = SP_data[SP_data['Symbol'] == symbol]['GICS Sub-Industry'].item()
+    symbol_sector = SP_data[SP_data['Symbol'] == symbol.replace("_", ".")]['GICS Sector'].item()
+    symbol_subsector = SP_data[SP_data['Symbol'] == symbol.replace("_", ".")]['GICS Sub-Industry'].item()
 
     sector_index = yf.download(indices[symbol_sector], period='10y', interval='1d')
     sector_index = sector_index.reset_index()
