@@ -1025,7 +1025,7 @@ def benchmarksAndCompetitorAnalysis(symbol: str):
     sector_cumulative_returns = (1 + sector_index['Adj Close'].pct_change()).cumprod()
     sp500_cumulative_returns = (1 + SP_index['Adj Close'].pct_change()).cumprod()
 
-    stock_trace = go.Scatter(x=symbol_data['Date'], y=stock_cumulative_returns.values, mode='lines', name=competitor_data[symbol == competitor_data['Symbol']].iloc[0,1])
+    stock_trace = go.Scatter(x=symbol_data['Date'], y=stock_cumulative_returns.values, mode='lines', name=competitor_data[symbol.replace("-", ".") == competitor_data['Symbol']].iloc[0,1])
     sector_trace = go.Scatter(x=sector_index['Date'], y=sector_cumulative_returns.values, mode='lines', name=symbol_sector)
     sp500_trace = go.Scatter(x=SP_index['Date'], y=sp500_cumulative_returns.values, mode='lines', name="S&P 500 Index")
 
