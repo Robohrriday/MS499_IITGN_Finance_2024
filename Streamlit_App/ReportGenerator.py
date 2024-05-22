@@ -341,8 +341,10 @@ def getSymbolReport(symbol:str) -> str:
         fig.suptitle(f"General Annual Financials - {symbol}\nMarket Cap: \${df1['marketCap']:,} | Enterprise Value: \${df1['enterpriseValue']:,}", color = 'white')
         plt.subplots_adjust(top = 0.85)
         
-        columns1 = [str(column)[:10] for column in df2.columns]
-        columns2 = [str(column)[:10] for column in df3.columns]
+        columns2 = [str(column)[:10] for column in df2.columns]
+        columns3 = [str(column)[:10] for column in df3.columns]
+        columns4 = [str(column)[:10] for column in df4.columns]
+        columns5 = [str(column)[:10] for column in df5.columns]
         
         if 'TotalRevenue' in df2.index:
             ax[0][0].set_title('Annual Total Revenue', color = 'white')
@@ -351,7 +353,7 @@ def getSymbolReport(symbol:str) -> str:
             ax[0][0].set_xlabel('Total Revenue', color = 'white')
             ax[0][0].set_ylabel('Time Instance', color = 'white')
             ax[0][0].set_yticks(np.arange(len(df2.columns)))
-            ax[0][0].set_yticklabels(columns1)
+            ax[0][0].set_yticklabels(columns2)
             ax[0][0].tick_params(axis='both', colors='white')
             ax[0][0].set_facecolor('#0e1117')
         else:
@@ -368,7 +370,7 @@ def getSymbolReport(symbol:str) -> str:
             ax[0][1].set_xlabel('Net Income', color = 'white')
             ax[0][1].set_ylabel('Time Instance', color = 'white')
             ax[0][1].set_yticks(np.arange(len(df2.columns)))
-            ax[0][1].set_yticklabels(columns1)
+            ax[0][1].set_yticklabels(columns2)
             ax[0][1].tick_params(axis='both', colors='white')
             ax[0][1].set_facecolor('#0e1117')
         else:
@@ -385,7 +387,7 @@ def getSymbolReport(symbol:str) -> str:
             ax[1][0].set_xlabel('Total Expenses', color = 'white')
             ax[1][0].set_ylabel('Time Instance', color = 'white')
             ax[1][0].set_yticks(np.arange(len(df2.columns)))
-            ax[1][0].set_yticklabels(columns1)
+            ax[1][0].set_yticklabels(columns2)
             ax[1][0].tick_params(axis='both', colors='white')
             ax[1][0].set_facecolor('#0e1117')
         else:
@@ -403,7 +405,7 @@ def getSymbolReport(symbol:str) -> str:
             ax[1][1].set_xlabel('Total Debt', color = 'white')
             ax[1][1].set_ylabel('Time Instance', color = 'white')
             ax[1][1].set_yticks(np.arange(len(df4.columns)))
-            ax[1][1].set_yticklabels(columns1)
+            ax[1][1].set_yticklabels(columns4)
             ax[1][1].tick_params(axis='both', colors='white')
             ax[1][1].set_facecolor('#0e1117')
         else:
@@ -447,7 +449,7 @@ def getSymbolReport(symbol:str) -> str:
             ax[0][0].set_xlabel('Total Revenue', color = 'white')
             ax[0][0].set_ylabel('Time Instance', color = 'white')
             ax[0][0].set_yticks(np.arange(len(df3.columns)))
-            ax[0][0].set_yticklabels(columns2)
+            ax[0][0].set_yticklabels(columns3)
             ax[0][0].tick_params(axis='both', colors='white')
             ax[0][0].set_facecolor('#0e1117')
         else:
@@ -463,7 +465,7 @@ def getSymbolReport(symbol:str) -> str:
             ax[0][1].set_xlabel('Net Income', color = 'white')
             ax[0][1].set_ylabel('Time Instance', color = 'white')
             ax[0][1].set_yticks(np.arange(len(df3.columns)))
-            ax[0][1].set_yticklabels(columns2)
+            ax[0][1].set_yticklabels(columns3)
             ax[0][1].tick_params(axis='both', colors='white')
             ax[0][1].set_facecolor('#0e1117')
         else:
@@ -479,7 +481,7 @@ def getSymbolReport(symbol:str) -> str:
             ax[1][0].set_xlabel('Total Expenses', color = 'white')
             ax[1][0].set_ylabel('Time Instance', color = 'white')
             ax[1][0].set_yticks(np.arange(len(df3.columns)))
-            ax[1][0].set_yticklabels(columns2)
+            ax[1][0].set_yticklabels(columns3)
             ax[1][0].tick_params(axis='both', colors='white')
             ax[1][0].set_facecolor('#0e1117')
         else:
@@ -495,7 +497,7 @@ def getSymbolReport(symbol:str) -> str:
             ax[1][1].set_xlabel('Total Debt', color = 'white')
             ax[1][1].set_ylabel('Time Instance', color = 'white')
             ax[1][1].set_yticks(np.arange(len(df5.columns)))
-            ax[1][1].set_yticklabels(columns2)
+            ax[1][1].set_yticklabels(columns5)
             ax[1][1].tick_params(axis='both', colors='white')
             ax[1][1].set_facecolor('#0e1117')
         else:
