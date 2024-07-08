@@ -598,8 +598,8 @@ def getSymbolReport(symbol:str) -> str:
 
         ax[1].set_title('Quarterly Profitability Ratios', color = 'white')
         ax[1].plot(np.arange(len(columns2)), np.array(df3.loc['Net Income'][::-1])/np.array(df3.loc['Total Revenue'][::-1]), color = 'g', marker = 'o', alpha = 0.7)
-        ax[1].plot(np.arange(len(columns2)), np.array(df3.loc['Net Income'][::-1])/np.array(df5.loc['Total Assets'][::-1]), 'ro-', alpha = 0.7)
-        ax[1].plot(np.arange(len(columns2)), np.array(df3.loc['Net Income'][::-1])/np.array(df5.loc['Stockholders Equity'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+        ax[1].plot(np.arange(len(columns2)), np.array(df3.loc['Net Income'][:-min(len(df3.columns), len(df5.columns))-1:-1])/np.array(df5.loc['Total Assets'][:-min(len(df3.columns), len(df5.columns))-1:-1]), 'ro-', alpha = 0.7)
+        ax[1].plot(np.arange(len(columns2)), np.array(df3.loc['Net Income'][:-min(len(df3.columns), len(df5.columns))-1:-1])/np.array(df5.loc['Stockholders Equity'][:-min(len(df3.columns), len(df5.columns))-1:-1]), color = 'orange', marker = 'o', alpha = 0.7)
         ax[1].grid(alpha = 0.5)
         ax[1].legend(['Net Profit Margin', 'Return On Assets (ROA)', 'Return On Equity (ROE)'])
         ax[1].set_xlabel('Time Instance', color = 'white')
