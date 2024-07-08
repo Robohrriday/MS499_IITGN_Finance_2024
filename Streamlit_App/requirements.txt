@@ -1,4 +1,4 @@
-matplotlib
+matplotlib==3.8.2
 yfinance==0.2.32
-plotly
-openpyxl
+plotly==5.19.0
+openpyxl==3.1.2
