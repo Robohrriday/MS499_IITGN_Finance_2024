@@ -574,13 +574,19 @@ def getSymbolReport(symbol:str) -> str:
         fig, ax = plt.subplots(1,2, figsize = (15, 8))
         fig.patch.set_facecolor('#0E1117')
         fig.suptitle(f'Profitability Ratios - {symbol}', color = 'white')
-        columns1 = [str(column)[:10] for column in df2.columns[::-1]]
-        columns2 = [str(column)[:10] for column in df3.columns[::-1]]
+        if len(df2.columns) < len(df4.columns):
+            columns1 = [str(column)[:10] for column in df2.columns[::-1]]
+        else:
+            columns1 = [str(column)[:10] for column in df4.columns[::-1]]
+        if len(df3.columns) < len(df5.columns):
+            columns2 = [str(column)[:10] for column in df3.columns[::-1]]
+        else:
+            columns2 = [str(column)[:10] for column in df5.columns[::-1]]
 
         ax[0].set_title('Annual Profitability Ratios', color = 'white')
         ax[0].plot(np.arange(len(columns1)), np.array(df2.loc['NetIncome'][::-1])/np.array(df2.loc['TotalRevenue'][::-1]), color = 'g', marker = 'o', alpha = 0.7)
-        ax[0].plot(np.arange(len(columns1)), np.array(df2.loc['NetIncome'][::-1])/np.array(df4.loc['TotalAssets'][::-1]), 'ro-', alpha = 0.7)
-        ax[0].plot(np.arange(len(columns1)), np.array(df2.loc['NetIncome'][::-1])/np.array(df4.loc['StockholdersEquity'][::-1]), color = 'orange', marker = 'o', alpha = 0.7)
+        ax[0].plot(np.arange(len(columns1)), np.array(df2.loc['NetIncome'][:-min(len(df2.columns), len(df4.columns))-1:-1])/np.array(df4.loc['TotalAssets'][:-min(len(df2.columns), len(df4.columns))-1:-1]), 'ro-', alpha = 0.7)
+        ax[0].plot(np.arange(len(columns1)), np.array(df2.loc['NetIncome'][:-min(len(df2.columns), len(df4.columns))-1:-1])/np.array(df4.loc['StockholdersEquity'][:-min(len(df2.columns), len(df4.columns))-1:-1]), color = 'orange', marker = 'o', alpha = 0.7)
         ax[0].grid(alpha = 0.5)
         ax[0].legend(['Net Profit Margin', 'Return On Assets (ROA)', 'Return On Equity (ROE)'])
         ax[0].set_xlabel('Time Instance', color = 'white')
