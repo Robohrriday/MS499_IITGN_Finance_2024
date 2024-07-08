@@ -2,4 +2,3 @@ matplotlib
 yfinance
 plotly
 openpyxl
-json
