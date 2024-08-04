@@ -28,7 +28,7 @@ def get_base64_of_image(image_filename):
 
 ### FINANCIAL ANALYSIS ###
 
-def getSymbolReport(symbol:str) -> str:
+def getSymbolReport(symbol:str, path:str = f"Streamlit_App/ReportMedia/") -> str:
     """
     Get required financial report for the desired symbol.
     symbol: Symbol
@@ -81,20 +81,22 @@ def getSymbolReport(symbol:str) -> str:
         fig = plt.gcf()
         fig.patch.set_facecolor('#0E1117')
         plt.title(f'Institutional Holders and Percentage Holding - {symbol}', color = 'white')
-        plt.pie(df1['Shares'],normalize=True,labels=df1['Holder'],textprops=dict(color="w"))
-        plt.pie(df1['Shares'],normalize=True,labels=round((df1['Shares']/df1['Shares'].sum())*100,3),labeldistance=0.5,rotatelabels=True)
-        plt.savefig('Streamlit_App/ReportMedia/Institutional_Holders_and_Percentage_Holding.png')
+        df1["shares"] = [float(i[:-1]) * 10**6 if i[-1] == "M" else float(i[:-1]) * 10**9 for i in df1["Shares"]]
+        plt.pie(df1['shares'],normalize=True,labels=df1['Holder'],textprops=dict(color="w"))
+        plt.pie(df1['shares'],normalize=True,labels=round((df1['shares']/df1['shares'].sum())*100,3),labeldistance=0.5,rotatelabels=True)
+        plt.savefig(f'{path}Institutional_Holders_and_Percentage_Holding.png')
         
         # Mutual_Fund_Holders_and_Percentage_Holding
         plt.figure(figsize=(15,5))
         fig = plt.gcf()
         fig.patch.set_facecolor('#0E1117')
         plt.title(f'Mutual Fund Holders and Percentage Holding - {symbol}', color = 'white')
-        plt.pie(df2['Shares'],normalize=True,labels=df2['Holder'], textprops=dict(color="w"))
-        plt.pie(df2['Shares'],normalize=True,labels=round((df2['Shares']/df2['Shares'].sum())*100,3),labeldistance=0.5,rotatelabels=True)
-        plt.savefig('Streamlit_App/ReportMedia/Mutual_Fund_Holders_and_Percentage_Holding.png')
+        df2["shares"] = [float(i[:-1]) * 10**6 if i[-1] == "M" else float(i[:-1]) * 10**9 for i in df2["Shares"]]
+        plt.pie(df2['shares'],normalize=True,labels=df2['Holder'], textprops=dict(color="w"))
+        plt.pie(df2['shares'],normalize=True,labels=round((df2['shares']/df2['shares'].sum())*100,3),labeldistance=0.5,rotatelabels=True)
+        plt.savefig(f'{path}Mutual_Fund_Holders_and_Percentage_Holding.png')
 
-        s = f"### **Investor Data**     \n![Institutional Holders and Percentage Holding]({get_base64_of_image('Streamlit_App/ReportMedia/Institutional_Holders_and_Percentage_Holding.png')})     \n![Mutual Fund Holders and Percentage Holding]({get_base64_of_image('Streamlit_App/ReportMedia/Mutual_Fund_Holders_and_Percentage_Holding.png')})     \n"
+        s = f"### **Investor Data**     \n![Institutional Holders and Percentage Holding]({get_base64_of_image(f'{path}Institutional_Holders_and_Percentage_Holding.png')})     \n![Mutual Fund Holders and Percentage Holding]({get_base64_of_image(f'{path}Mutual_Fund_Holders_and_Percentage_Holding.png')})     \n"
         return s
     
     def plot_current_ratio(df1:dict, df4:pd.DataFrame, df5:pd.DataFrame, ann:bool, qua:bool):
@@ -158,9 +160,9 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['bottom'].set_visible(False)
                 a.spines['left'].set_visible(False)
 
-            plt.savefig('Streamlit_App/ReportMedia/Current_Ratio.png')
+            plt.savefig(f'{path}Current_Ratio.png')
 
-            s = f"![Current Ratio]({get_base64_of_image('Streamlit_App/ReportMedia/Current_Ratio.png')})     \n"
+            s = f"![Current Ratio]({get_base64_of_image(f'{path}Current_Ratio.png')})     \n"
         elif ann:
             fig = plt.figure()
             fig = plt.gcf()
@@ -174,7 +176,7 @@ def getSymbolReport(symbol:str) -> str:
             plt.grid()
             plt.axis('off')
             
-            s = f"![Current Ratio]({get_base64_of_image('Streamlit_App/ReportMedia/Current_Ratio.png')})     \n"
+            s = f"![Current Ratio]({get_base64_of_image(f'{path}Current_Ratio.png')})     \n"
         elif qua:
             fig = plt.figure()
             fig = plt.gcf()
@@ -188,7 +190,7 @@ def getSymbolReport(symbol:str) -> str:
             plt.grid()
             plt.axis('off')
 
-            s = f"![Current Ratio]({get_base64_of_image('Streamlit_App/ReportMedia/Current_Ratio.png')})     \n"
+            s = f"![Current Ratio]({get_base64_of_image(f'{path}Current_Ratio.png')})     \n"
         else:
             s = f"Historical Data Unavailable. Recent Current Ratio: {df1['currentRatio']}     \n"
         return s
@@ -421,7 +423,7 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['bottom'].set_visible(False)
                 a.spines['left'].set_visible(False)
         
-        plt.savefig('Streamlit_App/ReportMedia/General_Financials_Annual.png')
+        plt.savefig(f'{path}General_Financials_Annual.png')
 
         # ax[0].set_title(f'Annual Total Revenue, Income, Expenses and Debt', color = 'white')
         # ax[0].barh(np.arange(len(df2.columns))+0.3, df2.loc['TotalRevenue'], 0.2 , color = 'g', alpha = 0.6)
@@ -526,8 +528,8 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['bottom'].set_visible(False)
                 a.spines['left'].set_visible(False)
 
-        plt.savefig('Streamlit_App/ReportMedia/General_Financials_Quarterly.png')
-        return f"![General Annual Financials]({get_base64_of_image('Streamlit_App/ReportMedia/General_Financials_Annual.png')}) \n![General Quarterly Financials]({get_base64_of_image('Streamlit_App/ReportMedia/General_Financials_Quarterly.png')}) \n"
+        plt.savefig(f'{path}General_Financials_Quarterly.png')
+        return f"![General Annual Financials]({get_base64_of_image(f'{path}General_Financials_Annual.png')}) \n![General Quarterly Financials]({get_base64_of_image(f'{path}General_Financials_Quarterly.png')}) \n"
 
     def plot_solvency_ratios(df4:pd.DataFrame, df5:pd.DataFrame):
         fig, ax = plt.subplots(1,2, figsize = (15, 8))
@@ -567,8 +569,8 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['bottom'].set_visible(False)
                 a.spines['left'].set_visible(False)
 
-        plt.savefig('Streamlit_App/ReportMedia/Solvency_Ratios.png')
-        return f"![Solvency Ratios]({get_base64_of_image('Streamlit_App/ReportMedia/Solvency_Ratios.png')})   \n"
+        plt.savefig(f'{path}Solvency_Ratios.png')
+        return f"![Solvency Ratios]({get_base64_of_image(f'{path}Solvency_Ratios.png')})   \n"
 
     def plot_profitability_ratios(df2:pd.DataFrame, df3:pd.DataFrame, df4:pd.DataFrame, df5:pd.DataFrame):
         fig, ax = plt.subplots(1,2, figsize = (15, 8))
@@ -614,8 +616,8 @@ def getSymbolReport(symbol:str) -> str:
                 a.spines['bottom'].set_visible(False)
                 a.spines['left'].set_visible(False)
 
-        plt.savefig('Streamlit_App/ReportMedia/Profitability_Ratios.png')
-        return f"![Profitability Ratios]({get_base64_of_image('Streamlit_App/ReportMedia/Profitability_Ratios.png')})  \n"
+        plt.savefig(f'{path}Profitability_Ratios.png')
+        return f"![Profitability Ratios]({get_base64_of_image(f'{path}Profitability_Ratios.png')})  \n"
     
     def plot_earnings(df2:pd.DataFrame, df3:pd.DataFrame, df4:pd.DataFrame, df5:pd.DataFrame):
         fig, ax = plt.subplots(1,2, figsize = (15,8))
@@ -794,8 +796,8 @@ def getSymbolReport(symbol:str) -> str:
             a.spines['left'].set_visible(False)
 
         
-        plt.savefig('Streamlit_App/ReportMedia/Earnings.png')
-        return f"![Earnings]({get_base64_of_image('Streamlit_App/ReportMedia/Earnings.png')}) \n"
+        plt.savefig(f'{path}Earnings.png')
+        return f"![Earnings]({get_base64_of_image(f'{path}Earnings.png')}) \n"
         
 
 
@@ -837,7 +839,7 @@ def getSymbolReport(symbol:str) -> str:
 
 ### TECHNICAL ANALYSIS ###
 
-def getTechnicalAnalysis(symbol:str):
+def getTechnicalAnalysis(symbol:str, path:str = "Streamlit_App/"):
     """
     Get basic technical analysis for the desired symbol.
     symbol: Symbol
@@ -859,8 +861,8 @@ def getTechnicalAnalysis(symbol:str):
 
     # Plot data
 
-    recession = pd.read_csv("Streamlit_App/GDP Based Recession Indicator.csv")    # Reference = https://fred.stlouisfed.org/series/JHGDPBRINDX
-    inflation = pd.read_csv("Streamlit_App/Inflation.csv")                        # Reference = https://fred.stlouisfed.org/series/T10YIE
+    recession = pd.read_csv(f"{path}GDP Based Recession Indicator.csv")    # Reference = https://fred.stlouisfed.org/series/JHGDPBRINDX
+    inflation = pd.read_csv(f"{path}Inflation.csv")                        # Reference = https://fred.stlouisfed.org/series/T10YIE
 
     new_recession_date = pd.Series(recession['DATE'], dtype = 'datetime64[ms]')
     new_inflation_date = pd.Series(inflation['DATE'], dtype = 'datetime64[ms]')
@@ -990,7 +992,7 @@ def getTechnicalAnalysis(symbol:str):
     return fig
 
 
-def benchmarksAndCompetitorAnalysis(symbol: str):
+def benchmarksAndCompetitorAnalysis(symbol: str, path:str = "Streamlit_App/"):
     """
     Get comparison of returns against benchmarks and competitors from similar industry for the desired symbol.
     symbol: Symbol
@@ -1004,7 +1006,7 @@ def benchmarksAndCompetitorAnalysis(symbol: str):
                "Consumer Staples": "^SP500-30", "Energy": "^SP500-10", "Utilities": "^SP500-55", "Real Estate": "^SP500-60",
                "Materials": "^SP500-15", "S&P 500 Index": "^GSPC"}
 
-    SP_data = pd.read_excel("Streamlit_App/S&P500data.xlsx")
+    SP_data = pd.read_excel(f"{path}S&P500data.xlsx")
     SP_data.columns = SP_data.iloc[0, :]
     SP_data = SP_data.drop(index=0)
 
